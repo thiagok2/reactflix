@@ -58,7 +58,8 @@ src/
 
 ## 5. Configuração do React Router
 
-Altere o arquivo `src/index.js`:
+Altere o arquivo `src/index.js` com a import do boostrap e você também pode remover 
+o reportWebVitals.
 
 ```js
 import React from 'react';
@@ -76,32 +77,34 @@ root.render(
 );
 ```
 
+Para testar a aplicação, execute no terminal
+```sh
+  npm start
+```
+
+Depois de um tempo[paciência :)], o navegador vai abrir com um ícone da logo do react.
+
 ## 6. Definir Rotas Iniciais
 
-Crie ou edite o arquivo `src/App.js`:
+O arquivo src/App é o arquivo principal de aplicação. Tanto que é referenciado no src/index.js.
+
+Vamos zerar o arquivoz App.js:
 
 ```js
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import FilmesList from './pages/FilmesList';
-import FilmePage from './pages/FilmePage';
-import Navbar from './components/Navbar';
+import './App.css';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/filmes" element={<FilmesList />} />
-        <Route path="/filmes/:id" element={<FilmePage />} />
-      </Routes>
+      <h1>Teste</h1>
     </>
   );
 }
 
 export default App;
+
 ```
+Agora vamos criar nossos componentes:
 
 ## 7. Navbar Comum a Todas as Páginas
 
@@ -172,7 +175,35 @@ const FilmePage = () => (
 export default FilmePage;
 ```
 
----
+
+Crie ou edite o arquivo inserindo as rotas `src/App.js`. Ele tem referências para 4 arquivos que ainda não existem, mas que vamos criar a seguir:
+
+Os arquivos serão criados na pasta pages e se chamam: Home.js, FilmePage.js, FilmeList.js e Navbar.js.
+
+
+```js
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import FilmesList from './pages/FilmesList';
+import FilmePage from './pages/FilmePage';
+import Navbar from './components/Navbar';
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/filmes" element={<FilmesList />} />
+        <Route path="/filmes/:id" element={<FilmePage />} />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
+```
+
 
 ## 9. Criar `FilmesService.js` com dados mockados
 
