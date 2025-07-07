@@ -67,16 +67,16 @@ export default FilmeCard;
 
 ---
 
-## 18. Atualizar `FilmesList.js` para exibir os cards
+## 18. Atualizar `FilmesListPage.js` para exibir os cards
 
-Edite `src/pages/FilmesList.js`:
+Edite `src/pages/FilmesListPage.js`:
 
 ```js
 import React, { useEffect, useState } from 'react';
 import filmesService from '../services/FilmesService';
 import FilmeCard from '../components/FilmeCard';
 
-const FilmesList = () => {
+const FilmesListPage = () => {
   const [filmes, setFilmes] = useState([]);
 
   useEffect(() => {
@@ -97,7 +97,7 @@ const FilmesList = () => {
   );
 };
 
-export default FilmesList;
+export default FilmesListPage;
 ```
 
 ---

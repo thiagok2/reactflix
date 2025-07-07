@@ -139,12 +139,14 @@ export default Navbar;
 ### Criar o arquivo `src/pages/Home.js`
 
 ```js
-const Home = () => (
-  <div className="container mt-5">
-    <h1>ReactFlix</h1>
-    <p>Bem-vindo à sua plataforma de filmes interativa!</p>
-  </div>
-);
+const Home = () => {
+  return(
+    <div className="container mt-5">
+      <h1>ReactFlix</h1>
+      <p>Bem-vindo à sua plataforma de filmes interativa!</p>
+    </div>
+  );
+}
 
 export default Home;
 ```
@@ -152,12 +154,15 @@ export default Home;
 ### Criar o arquivo `src/pages/FilmesListPage.js`
 
 ```js
-const FilmesListPage = () => (
-  <div className="container mt-5">
-    <h1>Filmes</h1>
-    <p>Lista de filmes em destaque.</p>
-  </div>
-);
+const FilmesListPage = () => {
+  return (
+    <div className="container mt-5">
+      <h1>FilmesListPage</h1>
+      <p>Lista de filmes em destaque.</p>
+    </div>
+  );
+};
+
 
 export default FilmesListPage;
 ```
@@ -165,12 +170,15 @@ export default FilmesListPage;
 ### Criar o arquivo `src/pages/FilmePage.js`
 
 ```js
-const FilmePage = () => (
-  <div className="container mt-5">
-    <h1>Detalhes do Filme</h1>
-    <p>Aqui serão exibidos os detalhes do filme selecionado.</p>
-  </div>
-);
+const FilmePage = () => {
+  
+  return (
+    <div className="container mt-5">
+      <h1>Detalhes do Filme</h1>
+      <p>Aqui serão exibidos os detalhes do filme selecionado.</p>
+    </div>
+  )
+};
 
 export default FilmePage;
 ```
@@ -249,7 +257,7 @@ export default filmesService;
 
 > Na Parte 2B vamos:
 >
-> - Usar o `FilmesService` na página `FilmesList`
+> - Usar o `FilmesService` na página `FilmesListPage`
 > - Implementar navegação para detalhes
 > - Exibir dados reais do filme na `FilmePage`
 > - Adicionar lista de comentários e formulário para novo comentário
