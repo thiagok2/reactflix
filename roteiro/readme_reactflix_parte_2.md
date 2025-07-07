@@ -12,14 +12,103 @@ Nesta segunda parte, continuaremos o desenvolvimento da aplicação ReactFlix, c
 
 ## 10. Listar Filmes com Link para Detalhes
 
+
 Edite o arquivo `src/pages/FilmesList.js`:
+
+Primeiro passo, pode ser adicionar os imports:
+```js
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import filmesService from '../services/FilmesService';
+```
+
+
+O segundo passo é definir a constante filmes, que vai ser a lista de filme que será exibida na página. Para tal usamos o **useState**
+
+Veja o trecho:
+
+```js
+//...
+const FilmesPageList = () => {  
+  const [filmes, setFilmes] = useState([]);
+
+  useEffect(() => {
+    const lista = filmesService.getFilmes();
+    setFilmes(lista);
+  }, []);
+
+```
+
+Sobre useState e useEffect:
+
+No React, os hooks useState e useEffect são essenciais para trabalhar com estado e efeitos colaterais em componentes funcionais.
+
+🧠 useState
+O useState é utilizado para declarar uma variável de estado dentro de um componente funcional.
+
+```js
+  const [filmes, setFilmes] = useState([]);
+```
+Neste exemplo:
+
+1. filmes é o estado atual (inicialmente um array vazio []).
+2. setFilmes é a função que atualiza esse estado.
+
+Sempre que o setFilmes for chamado, o componente será re-renderizado com o novo valor de filmes.
+
+Esse hook é ideal para armazenar dados dinâmicos, como:
+1. Listas de itens,
+2. Formulários preenchidos pelo usuário,
+3. Dados recebidos de APIs, etc.
+
+⚙️ useEffect
+O useEffect é usado para executar efeitos colaterais após o componente ser renderizado.
+
+```js
+useEffect(() => {
+  const lista = filmesService.getFilmes();
+  setFilmes(lista);
+}, []);
+```
+
+Neste exemplo, o efeito executa o código dentro da função somente uma vez, logo após o componente ser montado (porque o array de dependências [] está vazio).
+
+Ou seja:
+* Ele é ideal para buscar dados de um serviço ou API assim que o componente é exibido na tela.
+* Dentro do useEffect, é comum fazer chamadas assíncronas, manipular DOM diretamente (se necessário), ou configurar e limpar listeners.
+
+
+
+
+
+Por fim, a instrução de return de fato vai retornar o conteúdo a ser renderizado:
+
+```js
+  return (
+    <div className="container mt-5">
+      <h1>Filmes</h1>
+      <ul className="list-group">
+        {filmes.map(filme => (
+          <li key={filme.id} className="list-group-item d-flex justify-content-between">
+            <Link to={`/filmes/${filme.id}`}>{filme.titulo}</Link>
+            <span>{filme.ano_lancamento} - {filme.genero}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+```
+
+
+
+
 
 ```js
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import filmesService from '../services/FilmesService';
 
-const FilmesList = () => {
+const FilmesPageList = () => {
   const [filmes, setFilmes] = useState([]);
 
   useEffect(() => {
@@ -42,7 +131,7 @@ const FilmesList = () => {
   );
 };
 
-export default FilmesList;
+export default FilmesPageList;
 ```
 
 ---

@@ -206,6 +206,7 @@ export default App;
 
 NAVEGGUE E VEJA AS COISAS FUCIONADO!!
 
+# Criando a classe service mockada para testar
 
 ## 9. Criar `FilmesService.js` com dados mockados
 
