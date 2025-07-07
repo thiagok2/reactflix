@@ -108,7 +108,7 @@ Agora vamos criar nossos componentes:
 
 ## 7. Navbar Comum a Todas as Páginas
 
-Crie o arquivo `src/components/Navbar.js`:
+### Crie o arquivo `src/components/Navbar.js`:
 
 ```js
 import { Link } from 'react-router-dom';
@@ -136,7 +136,7 @@ export default Navbar;
 
 ## 8. Criar as Páginas Iniciais
 
-### `src/pages/Home.js`
+### Criar o arquivo `src/pages/Home.js`
 
 ```js
 const Home = () => (
@@ -149,7 +149,7 @@ const Home = () => (
 export default Home;
 ```
 
-### `src/pages/FilmesList.js`
+### Criar o arquivo `src/pages/FilmesList.js`
 
 ```js
 const FilmesList = () => (
@@ -162,7 +162,7 @@ const FilmesList = () => (
 export default FilmesList;
 ```
 
-### `src/pages/FilmePage.js`
+### Criar o arquivo `src/pages/FilmePage.js`
 
 ```js
 const FilmePage = () => (
@@ -174,9 +174,9 @@ const FilmePage = () => (
 
 export default FilmePage;
 ```
+Uma vez que os arquivos foram criados, vamos referenciar eles no src/App.js.
 
-
-Crie ou edite o arquivo inserindo as rotas `src/App.js`. Ele tem referências para 4 arquivos que ainda não existem, mas que vamos criar a seguir:
+Edite o arquivo inserindo as rotas `src/App.js`. Ele tem referências para 4 arquivos que criamos a pouco:
 
 Os arquivos serão criados na pasta pages e se chamam: Home.js, FilmePage.js, FilmeList.js e Navbar.js.
 
