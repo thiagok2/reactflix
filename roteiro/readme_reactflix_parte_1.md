@@ -149,17 +149,17 @@ const Home = () => (
 export default Home;
 ```
 
-### Criar o arquivo `src/pages/FilmesList.js`
+### Criar o arquivo `src/pages/FilmesListPage.js`
 
 ```js
-const FilmesList = () => (
+const FilmesListPage = () => (
   <div className="container mt-5">
     <h1>Filmes</h1>
     <p>Lista de filmes em destaque.</p>
   </div>
 );
 
-export default FilmesList;
+export default FilmesListPage;
 ```
 
 ### Criar o arquivo `src/pages/FilmePage.js`
@@ -184,7 +184,7 @@ Os arquivos serão criados na pasta pages e se chamam: Home.js, FilmePage.js, Fi
 ```js
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import FilmesList from './pages/FilmesList';
+import FilmesListPage from './pages/FilmesListPage';
 import FilmePage from './pages/FilmePage';
 import Navbar from './components/Navbar';
 
@@ -194,7 +194,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/filmes" element={<FilmesList />} />
+        <Route path="/filmes" element={<FilmesListPage />} />
         <Route path="/filmes/:id" element={<FilmePage />} />
       </Routes>
     </>
