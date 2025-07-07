@@ -59,21 +59,21 @@ src/
 ## 5. Configuração do React Router
 
 Altere o arquivo `src/index.js` com a import do boostrap e você também pode remover 
-o reportWebVitals.
+o reportWebVitals. Veja que foi adicionado o componente **BrowserRouter** fundamental para as rotas.
 
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
 ```
 
@@ -203,6 +203,8 @@ function App() {
 
 export default App;
 ```
+
+NAVEGGUE E VEJA AS COISAS FUCIONADO!!
 
 
 ## 9. Criar `FilmesService.js` com dados mockados
