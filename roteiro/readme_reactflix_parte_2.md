@@ -193,14 +193,53 @@ const FilmePage = () => {
 }
 ```
 
+Antes de finalizarmos, vamos criar um componente de comentários:
 
+## Criar o Componente `ComentarioList`
 
+Crie o arquivo `src/components/ComentarioList.js`:
 
+```js
+import React, { useEffect, useState } from 'react';
+import filmesService from '../services/FilmesService';
 
+const ComentarioList = ({ idFilme }) => {
+  const [comentarios, setComentarios] = useState([]);
 
+  useEffect(() => {
+    const lista = filmesService.getComentariosByFilmeId(idFilme);
+    setComentarios(lista);
+  }, [idFilme]);
 
+  return (
+    <div>
+      <h2>Comentários</h2>
+      {comentarios.length === 0 && <p className="text-muted">Nenhum comentário ainda.</p>}
+      <ul className="list-group">
+        {comentarios.map((comentario, idx) => (
+          <li key={idx} className="list-group-item">
+            <strong>{comentario.autor}</strong> ({comentario.data}):<br />
+            {comentario.texto} <br />
+            <small className="text-muted">Nota: {comentario.avaliacao}</small>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-Edite `src/pages/FilmePage.js`:
+export default ComentarioList;
+```
+
+## Atualizando FilmePage para ter os comentários
+
+Edite `src/pages/FilmePage.js` para ele incluir a linha:
+
+```js
+ <ComentarioList idFilme={filme.id} />
+```
+
+Assim ele está passando o idFilme como property(atributdo) do componente. Repare que isso é diferente de parâmetro. Parâmetro fica na URL, e propriedade fica na tag do componente.
 
 ```js
 import React, { useEffect, useState } from 'react';
@@ -238,43 +277,6 @@ const FilmePage = () => {
 export default FilmePage;
 ```
 
----
-
-## 12. Criar o Componente `ComentarioList`
-
-Crie o arquivo `src/components/ComentarioList.js`:
-
-```js
-import React, { useEffect, useState } from 'react';
-import filmesService from '../services/FilmesService';
-
-const ComentarioList = ({ idFilme }) => {
-  const [comentarios, setComentarios] = useState([]);
-
-  useEffect(() => {
-    const lista = filmesService.getComentariosByFilmeId(idFilme);
-    setComentarios(lista);
-  }, [idFilme]);
-
-  return (
-    <div>
-      <h2>Comentários</h2>
-      {comentarios.length === 0 && <p className="text-muted">Nenhum comentário ainda.</p>}
-      <ul className="list-group">
-        {comentarios.map((comentario, idx) => (
-          <li key={idx} className="list-group-item">
-            <strong>{comentario.autor}</strong> ({comentario.data}):<br />
-            {comentario.texto} <br />
-            <small className="text-muted">Nota: {comentario.avaliacao}</small>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default ComentarioList;
-```
 
 ---
 
