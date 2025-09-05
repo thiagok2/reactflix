@@ -301,6 +301,8 @@ export const filmesNum = [
   {
     id: 22,
     titulo: "Como Treinar Seu Dragão",
+    tipo:"f",
+    temporadas: null,
     fotoThumbnail: "../Imagens/comotreinar.jpg",
     ano_lancamento: 2010,
     genero: "Animação, Aventura",
@@ -310,6 +312,7 @@ export const filmesNum = [
     numero_comentarios: 12000,
     faixa_etaria: "Livre",
     indicacoes_premios: ["Oscar"],
+    sinopse:"Na ilha de Berk, os vikings dedicam a vida a combater e matar dragões. Soluço (Jay Baruchel), filho do chefe Stoico (Gerard Butler), não é diferente. Ele sonha em matar um dragão e provar seu valor ao pai, apesar da descrença geral. Um dia, por acaso, ele acerta um dragão que jamais foi visto, chamado Fúria da Noite. Ao procurá-lo, no dia seguinte, Soluço não consegue matá-lo e acaba soltando-o. Só que ele perdeu parte da cauda e, com isso, não consegue mais voar. Soluço passa a trabalhar em um artefato que possa substituir a parte perdida e, aos poucos, se aproxima do dragão. Só que, paralelamente, Stoico autoriza que o filho participe do treino para dragões, cuja prova final é justamente matar um dos animais."
   },
   {
     id: 23,
