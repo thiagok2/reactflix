@@ -4,6 +4,8 @@ export const filmes = [
     titulo: "Stranger Things",
     fotoThumbnail: "../Imagens/stranger.jpg",
     ano_lancamento: 2016,
+    tipo: "s",
+    temporadas: 3,
     genero: "Ficção Científica, Terror",
     elenco: ["Millie Bobby Brown", "Finn Wolfhard", "David Harbour"],
     duracao: "50min",
@@ -11,13 +13,15 @@ export const filmes = [
     numero_comentarios: 15230,
     faixa_etaria: "14+",
     indicacoes_premios: ["Emmy", "Globo de Ouro"],
-    sinopse: ""
+    sinopse: "Stranger Things é uma série sobre o desaparecimento de um garoto em uma cidadezinha dos anos 80, Hawkins, Indiana, que leva um grupo de amigos, sua mãe e o chefe de polícia a descobrir experiências secretas do governo, uma dimensão alternativa assustadora chamada Mundo Invertido e uma menina misteriosa com poderes telecinéticos, Onze (Eleven). A série mistura ficção científica, suspense e nostalgia dos anos 80, seguindo as aventuras do grupo enquanto eles enfrentam monstros sobrenaturais e o poderoso vilão Vecna para salvar sua cidade. "
   },
   {
     id: 2,
     titulo: "Peak Blinders",
     fotoThumbnail: "../Imagens/peak.jpg",
     ano_lancamento: 2013,
+    tipo: "s",
+    temporadas: 6,
     genero: "Drama, Crime",
     elenco: ["Cillian Murphy", "Paul Anderson", "Helen McCrory"],
     duracao: "1h",
@@ -25,7 +29,7 @@ export const filmes = [
     numero_comentarios: 9745,
     faixa_etaria: "16+",
     indicacoes_premios: ["BAFTA", "Emmy"],
-    sinopse: ""
+    sinopse: "Peaky Blinders é um drama histórico que segue a família Shelby, uma gangue de criminosos em Birmingham, após a Primeira Guerra Mundial, liderada pelo ambicioso Thomas Shelby (interpretado por Cillian Murphy). A série acompanha a ascensão do grupo no submundo do crime, envolvendo-se em atividades como apostas ilegais, roubo de mercadorias e corrupção, enquanto Tommy tenta expandir seu império para o Reino Unido e lida com os traumas do passado e as complexidades políticas da época. "
   },
   {
     id: 3,
