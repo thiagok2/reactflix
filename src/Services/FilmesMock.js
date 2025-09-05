@@ -307,4 +307,18 @@ export const filmesNum = [
     faixa_etaria: "Livre",
     indicacoes_premios: ["Oscar"],
   },
+  {
+    id: 23,
+    titulo: "Travelers",
+    fotoThumbnail: "../Imagens/Travelers.jpg",
+    ano_lancamento: 2016,
+    genero: "Drama, Suspense",
+    elenco: [" Eric McCormack, MacKenzie Porter, Nesta Cooper"],
+    duracao: "3 Temporadas",
+    nota_avaliacao: 8.1,
+    numero_comentarios: 12000,
+    faixa_etaria: "16+",
+    indicacoes_premios: ["Oscar"],
+    sinopse: "Centenas de anos no futuro, os humanos sobreviventes descobrem como enviar a consciência humana de volta no tempo, para dentro de pessoas que vivem no século XXI. Esses viajantes assumem as vidas de outras pessoas, enquanto tentam salvar a humanidade de um futuro terrível. "
+  },
 ];
