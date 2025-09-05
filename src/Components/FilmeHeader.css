@@ -1,0 +1,103 @@
+.PaiHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 40px;
+    max-width: 700px; 
+}
+
+
+.texto{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.infoFilme {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto; 
+    padding: 5px ;
+}
+
+
+.Tempo {
+    font-size: 16px;
+    color: rgba(200, 200, 200, 0.85);
+}
+
+
+.classificacao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.idade {
+    min-width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 6px;
+    background: crimson;
+    color: white;
+}
+
+
+.sobre {
+    font-size: 15px;
+    color: white;
+    line-height: 1.4;
+}
+
+.descricao {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.4;
+}
+
+
+.genero-elenco-estefilme {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 10px;
+    min-width: 260px;
+    border: solid 1px white;
+    background-color: rgba(245, 245, 245, 0.95);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: black;
+}
+
+
+
+.nomezinho {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 0;
+}
+
+
+.card-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 80px;
+}
+
+.cor-visao{
+    color: red;
+    font-size: 20px;
+}

@@ -1,0 +1,65 @@
+
+
+
+.filmes{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 45px;
+    padding: 20px;
+    gap:10px;
+    font-weight: 500;
+    margin-bottom: -80px;
+}
+
+.carroselNum{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 30px;
+    width: auto;
+    position: relative;
+    align-items: center;
+    overflow-x:scroll, hidden;
+    scroll-behavior: smooth;
+    overflow-clip-margin: content-box;
+    cursor: grab;
+
+}
+
+.fotoNum{
+    display: flex;
+    width: 180px;
+    height: 250px;
+    margin-left: -30px;
+
+}
+
+
+.conjuntoNum{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -50px;
+    
+    
+}
+
+
+.numero{
+    
+
+    font-weight: 800;
+    font-style: normal;
+
+    font-size: 320px;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #555555;
+    margin-right: -30px;
+    
+}

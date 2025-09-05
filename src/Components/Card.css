@@ -1,0 +1,28 @@
+.Perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    cursor: pointer;
+    transition:  transform ease 200ms;
+    text-decoration: none;
+    
+}
+
+.Perfil:hover{
+    transform: scale(1.1);
+    
+}
+
+.fotoPerfil{
+    width: 140px;
+    height: 140px;
+    border-radius: 2px;
+    
+}   
+
+.NomePerfil{
+    color: white;
+
+}
