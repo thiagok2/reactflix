@@ -20,6 +20,8 @@ export const filmes = [
     titulo: "Peak Blinders",
     fotoThumbnail: "../Imagens/peak.jpg",
     ano_lancamento: 2013,
+    tipo: "s",
+    temporadas: 6,
     genero: "Drama, Crime",
     elenco: ["Cillian Murphy", "Paul Anderson", "Helen McCrory"],
     duracao: "1h",
@@ -27,7 +29,7 @@ export const filmes = [
     numero_comentarios: 9745,
     faixa_etaria: "16+",
     indicacoes_premios: ["BAFTA", "Emmy"],
-    sinopse: ""
+    sinopse: "Peaky Blinders é um drama histórico que segue a família Shelby, uma gangue de criminosos em Birmingham, após a Primeira Guerra Mundial, liderada pelo ambicioso Thomas Shelby (interpretado por Cillian Murphy). A série acompanha a ascensão do grupo no submundo do crime, envolvendo-se em atividades como apostas ilegais, roubo de mercadorias e corrupção, enquanto Tommy tenta expandir seu império para o Reino Unido e lida com os traumas do passado e as complexidades políticas da época. "
   },
   {
     id: 3,
