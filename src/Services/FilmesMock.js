@@ -4,6 +4,8 @@ export const filmes = [
     titulo: "Stranger Things",
     fotoThumbnail: "../Imagens/stranger.jpg",
     ano_lancamento: 2016,
+    tipo: "s",
+    temporadas: 3,
     genero: "Ficção Científica, Terror",
     elenco: ["Millie Bobby Brown", "Finn Wolfhard", "David Harbour"],
     duracao: "50min",
@@ -11,7 +13,7 @@ export const filmes = [
     numero_comentarios: 15230,
     faixa_etaria: "14+",
     indicacoes_premios: ["Emmy", "Globo de Ouro"],
-    sinopse: "teste"
+    sinopse: "Stranger Things é uma série sobre o desaparecimento de um garoto em uma cidadezinha dos anos 80, Hawkins, Indiana, que leva um grupo de amigos, sua mãe e o chefe de polícia a descobrir experiências secretas do governo, uma dimensão alternativa assustadora chamada Mundo Invertido e uma menina misteriosa com poderes telecinéticos, Onze (Eleven). A série mistura ficção científica, suspense e nostalgia dos anos 80, seguindo as aventuras do grupo enquanto eles enfrentam monstros sobrenaturais e o poderoso vilão Vecna para salvar sua cidade. "
   },
   {
     id: 2,
