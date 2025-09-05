@@ -11,7 +11,7 @@ export const filmes = [
     numero_comentarios: 15230,
     faixa_etaria: "14+",
     indicacoes_premios: ["Emmy", "Globo de Ouro"],
-    sinopse: ""
+    sinopse: "teste"
   },
   {
     id: 2,
