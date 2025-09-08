@@ -18,12 +18,40 @@
     gap: 7px;
     width: auto;
     position: relative;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
+     padding: 1rem 0;
     scroll-behavior: smooth;
     overflow-clip-margin: content-box;
     cursor: grab;
     
+}
+.carrosel::-webkit-scrollbar {
+  height: 8px; /* Altura da barra de scroll */
+}
+
+.carrosel::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor do "caminho" do scroll */
+  border-radius: 4px;
+}
+
+.carrosel::-webkit-scrollbar-thumb {
+  background: #888; /* Cor do "pegador" do scroll */
+  border-radius: 4px;
+}
+
+.carrosel::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor quando passa o mouse por cima */
+}
+.carrosel {
+  /* ... (as propriedades de antes: display, overflow-x, etc) ... */
+
+  /* Para Firefox */
+  scrollbar-width: none; 
+  /* Para Chrome, Safari e Edge */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .carrosel:active{

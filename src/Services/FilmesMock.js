@@ -12,9 +12,9 @@ export const filmes = [
     duracao: "50min",
     nota_avaliacao: 8.7,
     numero_comentarios: 15230,
-    faixa_etaria: "14+",
+    faixa_etaria:"14+", 
     indicacoes_premios: ["Emmy", "Globo de Ouro"],
-    sinopse: "Stranger Things é uma série sobre o desaparecimento de um garoto em uma cidadezinha dos anos 80, Hawkins, Indiana, que leva um grupo de amigos, sua mãe e o chefe de polícia a descobrir experiências secretas do governo, uma dimensão alternativa assustadora chamada Mundo Invertido e uma menina misteriosa com poderes telecinéticos, Onze (Eleven). A série mistura ficção científica, suspense e nostalgia dos anos 80, seguindo as aventuras do grupo enquanto eles enfrentam monstros sobrenaturais e o poderoso vilão Vecna para salvar sua cidade. "
+    sinopse: "Em uma pequena cidade, um grupo de amigos se envolve em uma série de eventos sobrenaturais quando um garoto desaparece. Eles acabam descobrindo uma misteriosa menina com poderes telecinéticos e revelam experimentos secretos do governo, portais para outras dimensões e monstros aterrorizantes."
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const filmes = [
     numero_comentarios: 9745,
     faixa_etaria: "16+",
     indicacoes_premios: ["BAFTA", "Emmy"],
-    sinopse: "Peaky Blinders é um drama histórico que segue a família Shelby, uma gangue de criminosos em Birmingham, após a Primeira Guerra Mundial, liderada pelo ambicioso Thomas Shelby (interpretado por Cillian Murphy). A série acompanha a ascensão do grupo no submundo do crime, envolvendo-se em atividades como apostas ilegais, roubo de mercadorias e corrupção, enquanto Tommy tenta expandir seu império para o Reino Unido e lida com os traumas do passado e as complexidades políticas da época. "
+    sinopse: "Em Birmingham, Inglaterra, logo após a Primeira Guerra Mundial, a série acompanha a ascensão da família criminosa Shelby. Liderados pelo ambicioso e calculista Tommy Shelby, os Peaky Blinders expandem seus negócios ilegais enquanto lidam com gangues rivais, a polícia e seus próprios traumas."
   },
   {
     id: 3,
@@ -44,8 +44,8 @@ export const filmes = [
     nota_avaliacao: 8.5,
     numero_comentarios: 18400,
     faixa_etaria: "14+",
-    indicacoes_premios: [],sinopse: "",
-    sinopse: ""
+    indicacoes_premios: [],
+    sinopse: "A trama acompanha Harvey Specter, um dos melhores advogados de Nova York, que decide contratar o jovem Mike Ross, um gênio com memória fotográfica, mas que abandonou a faculdade de direito. Juntos, eles formam uma dupla imbatível, enquanto escondem o segredo de que Mike não possui licença para advogar."
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ export const filmes = [
     numero_comentarios: 9200,
     faixa_etaria: "16+",
     indicacoes_premios: ["Emmy"],
-    sinopse: ""
+    sinopse: "Sete crianças extraordinárias, adotadas por um bilionário, se reúnem após a sua morte. Agora adultos e distantes, eles precisam superar suas diferenças para impedir um apocalipse iminente que eles mesmos podem ter causado."
   },
   {
     id: 5,
@@ -75,7 +75,7 @@ export const filmes = [
     numero_comentarios: 3100,
     faixa_etaria: "16+",
     indicacoes_premios: [],
-    sinopse: ""
+    sinopse: "Durante a Dinastia Joseon da Coreia medieval, o príncipe herdeiro Chang investiga uma misteriosa praga que assola o reino. Ele descobre que a doença transforma os mortos em monstros sedentos por carne e precisa lutar para proteger seu povo."
   },
   {
     id: 6,
@@ -90,7 +90,7 @@ export const filmes = [
     numero_comentarios: 6400,
     faixa_etaria: "14+",
     indicacoes_premios: [],
-    sinopse: ""
+    sinopse: "Inspirado pelas aventuras de Arsène Lupin, o ladrão de casaca Assane Diop busca vingança pela injustiça cometida contra seu pai por uma família rica. Usando seu carisma e maestria em disfarces, ele executa roubos elaborados."
   },
 ];
 
@@ -108,7 +108,7 @@ export const filmes2 = [
     numero_comentarios: 15000,
     faixa_etaria: "16+",
     indicacoes_premios: ["Emmy"],
-    sinopse: ""
+    sinopse: "Um grupo de pessoas com dificuldades financeiras é convidado a participar de uma misteriosa competição de sobrevivência. Eles competem em jogos infantis mortais por um prêmio bilionário, onde quem perde é eliminado."
   },
   {
     id: 8,
@@ -123,7 +123,7 @@ export const filmes2 = [
     numero_comentarios: 21000,
     faixa_etaria: "16+",
     indicacoes_premios: ["Emmy Internacional"],
-    sinopse: ""
+    sinopse: "Um homem misterioso conhecido como 'O Professor' recruta oito pessoas para realizar o maior assalto da história: roubar a Casa da Moeda da Espanha. Enquanto executam o plano, eles precisam lidar com a polícia e reféns."
   },
   {
     id: 9,
@@ -138,7 +138,7 @@ export const filmes2 = [
     numero_comentarios: 4300,
     faixa_etaria: "14+",
     indicacoes_premios: [],
-    sinopse: ""
+    sinopse: "Em uma cidade norueguesa afetada pela poluição, um jovem descobre que possui os poderes do deus Thor. Ele precisa confrontar uma família de gigantes disfarçados de empresários que está destruindo a cidade."
   },
   {
     id: 10,
@@ -153,7 +153,7 @@ export const filmes2 = [
     numero_comentarios: 1500,
     faixa_etaria: "16+",
     indicacoes_premios: [],
-    sinopse: ""
+    sinopse: "Um ex-detetive é enviado para a prisão e descobre que o local é dominado por um prisioneiro que comanda um sindicato do crime de dentro das celas. Para sobreviver, ele precisa se juntar ao grupo e descobrir a verdade."
   },
   {
     id: 11,
@@ -168,7 +168,7 @@ export const filmes2 = [
     numero_comentarios: 12000,
     faixa_etaria: "16+",
     indicacoes_premios: ["Emmy"],
-    sinopse: ""
+    sinopse: "A série narra a história real da ascensão e queda do infame traficante colombiano Pablo Escobar e do Cartel de Medellín, contada a partir da perspectiva de Escobar e dos agentes do DEA que lideraram a missão para capturá-lo."
   },
   {
     id: 12,
@@ -183,7 +183,7 @@ export const filmes2 = [
     numero_comentarios: 800,
     faixa_etaria: "18+",
     indicacoes_premios: [],
-    sinopse: ""
+    sinopse: 'A série "Wandinha" foca na filha da Família Addams em uma escola para jovens com poderes sobrenaturais. Lá, ela tenta controlar suas habilidades psíquicas enquanto investiga uma onda de assassinatos misteriosos na cidade, descobrindo segredos sobre a escola, sua família e uma antiga profecia que a envolve.'
   },
 ];
 
@@ -191,6 +191,7 @@ export const filmesNum = [
   {
     id: 13,
     titulo: "The Chosen",
+    tipo: "s",
     fotoThumbnail: "../Imagens/thechosen.jpg",
     ano_lancamento: 2017,
     genero: "Drama Religioso",
@@ -200,11 +201,12 @@ export const filmesNum = [
     numero_comentarios: 7000,
     faixa_etaria: "12+",
     indicacoes_premios: [],
-    sinopse: ""
+    sinopse: "A série retrata a vida de Jesus Cristo sob a perspectiva das pessoas que o conheceram e seguiram, explorando suas vidas, lutas e a forma como seus encontros com Jesus os transformaram para sempre."
   },
   {
     id: 14,
     titulo: "Lupin",
+    tipo: "s",
     fotoThumbnail: "../Imagens/lupimNum.png",
     ano_lancamento: 2021,
     genero: "Suspense, Crime",
@@ -214,12 +216,12 @@ export const filmesNum = [
     numero_comentarios: 6400,
     faixa_etaria: "14+",
     indicacoes_premios: [],
-    sinopse: ""
-
+    sinopse: "Inspirado pelas aventuras de Arsène Lupin, o ladrão de casaca Assane Diop busca vingança pela injustiça cometida contra seu pai por uma família rica. Usando seu carisma e maestria em disfarces, ele executa roubos elaborados."
   },
   {
     id: 15,
     titulo: "Stranger Things",
+    tipo: "s",
     fotoThumbnail: "../Imagens/stVertical.jpeg",
     ano_lancamento: 2016,
     genero: "Ficção Científica, Terror",
@@ -229,12 +231,13 @@ export const filmesNum = [
     numero_comentarios: 15230,
     faixa_etaria: "14+",
     indicacoes_premios: ["Emmy"],
-    sinopse: ""
+    sinopse: "Em uma pequena cidade, um grupo de amigos se envolve em uma série de eventos sobrenaturais quando um garoto desaparece. Eles acabam descobrindo uma misteriosa menina com poderes telecinéticos e revelam experimentos secretos do governo."
   },
   {
     id: 16,
     titulo: "The Good Place",
     fotoThumbnail: "../Imagens/thegoodplace.webp",
+    tipo: "s",
     ano_lancamento: 2016,
     genero: "Comédia, Fantasia",
     elenco: ["Kristen Bell", "Ted Danson"],
@@ -243,11 +246,13 @@ export const filmesNum = [
     numero_comentarios: 5400,
     faixa_etaria: "12+",
     indicacoes_premios: ["Emmy"],
+    sinopse: "Após sua morte, Eleanor Shellstrop é enviada por engano para o 'Lugar Bom'. Percebendo que não pertence àquele lugar, ela busca a ajuda de sua alma gêmea para aprender a ser uma pessoa melhor e garantir sua permanência."
   },
   {
     id: 17,
     titulo: "Cobra Kai",
     fotoThumbnail: "../Imagens/cobrakai.jpg",
+    tipo: "s",
     ano_lancamento: 2018,
     genero: "Ação, Drama",
     elenco: ["Ralph Macchio", "William Zabka"],
@@ -256,10 +261,12 @@ export const filmesNum = [
     numero_comentarios: 8600,
     faixa_etaria: "14+",
     indicacoes_premios: [],
+    sinopse: "Décadas após o torneio de karatê de 1984, Johnny Lawrence reabre o dojo Cobra Kai. Isso reacende sua rivalidade com Daniel LaRusso, e a vida dos dois e de uma nova geração de lutadores se entrelaçam."
   },
   {
     id: 18,
     titulo: "Arrow",
+    tipo: "s",
     fotoThumbnail: "../Imagens/arrow.jpg",
     ano_lancamento: 2012,
     genero: "Ação, Super-herói",
@@ -269,10 +276,12 @@ export const filmesNum = [
     numero_comentarios: 9100,
     faixa_etaria: "14+",
     indicacoes_premios: [],
+    sinopse: "Após ser dado como morto por cinco anos, o bilionário Oliver Queen retorna à sua cidade com uma nova missão: combater o crime como um vigilante encapuzado, usando suas habilidades com arco e flecha para caçar os corruptos."
   },
   {
     id: 19,
     titulo: "Ratched",
+    tipo: "s",
     fotoThumbnail: "../Imagens/ratched.webp",
     ano_lancamento: 2020,
     genero: "Drama, Suspense",
@@ -282,10 +291,12 @@ export const filmesNum = [
     numero_comentarios: 3200,
     faixa_etaria: "16+",
     indicacoes_premios: [],
+    sinopse: "Em 1947, a série explora a origem de Mildred Ratched, a icônica enfermeira do filme 'Um Estranho no Ninho', mostrando sua jornada de uma simples enfermeira a uma figura manipuladora e monstruosa dentro de um hospital psiquiátrico."
   },
   {
     id: 20,
     titulo: "The Witcher",
+    tipo: "s",
     fotoThumbnail: "../Imagens/thewitcher.jpg",
     ano_lancamento: 2019,
     genero: "Fantasia, Ação",
@@ -295,6 +306,7 @@ export const filmesNum = [
     numero_comentarios: 14500,
     faixa_etaria: "16+",
     indicacoes_premios: ["Emmy"],
+    sinopse: "Geralt de Rívia, um caçador de monstros solitário, luta para encontrar seu lugar em um mundo onde as pessoas frequentemente se mostram mais perversas do que as bestas. Seu destino se entrelaça com o de uma jovem princesa e uma feiticeira."
   },
   {
     id: 21,
@@ -309,7 +321,7 @@ export const filmesNum = [
     numero_comentarios: 2100,
     faixa_etaria: "16+",
     indicacoes_premios: [],
-    sinopse: "Bob Lee Swagger (Mark Wahlberg) é um ex-atirador de elite dos Marines, que se afastou do trabalho após uma traição. Isolado em um refúgio remoto nas montanhas, Bob é encontrado pelo coronel aposentado Isaac Johnson (Danny Glover). Johnson lhe diz que o país precisa de sua ajuda, já que a vida do presidente está em risco e apenas suas habilidades em tiro de longa distância podem impedir que esta ameaça se concretize. Inicialmente relutante, Bob aceita o trabalho. Porém logo ele descobre que tudo é na verdade uma armação patrocinada por Johnson."
+    sinopse: "Um exímio atirador de elite da marinha é convencido a voltar à ativa para impedir um atentado. No entanto, ele é traído e se torna o principal suspeito, precisando usar todas as suas habilidades para caçar os verdadeiros culpados."
   },
   {
     id: 22,
@@ -325,22 +337,6 @@ export const filmesNum = [
     numero_comentarios: 12000,
     faixa_etaria: "Livre",
     indicacoes_premios: ["Oscar"],
-    sinopse:"Na ilha de Berk, os vikings dedicam a vida a combater e matar dragões. Soluço (Jay Baruchel), filho do chefe Stoico (Gerard Butler), não é diferente. Ele sonha em matar um dragão e provar seu valor ao pai, apesar da descrença geral. Um dia, por acaso, ele acerta um dragão que jamais foi visto, chamado Fúria da Noite. Ao procurá-lo, no dia seguinte, Soluço não consegue matá-lo e acaba soltando-o. Só que ele perdeu parte da cauda e, com isso, não consegue mais voar. Soluço passa a trabalhar em um artefato que possa substituir a parte perdida e, aos poucos, se aproxima do dragão. Só que, paralelamente, Stoico autoriza que o filho participe do treino para dragões, cuja prova final é justamente matar um dos animais."
-  },
-  {
-    id: 23,
-    titulo: "Travelers",
-    tipo: "s",
-    temporadas: 3,
-    fotoThumbnail: "../Imagens/Travelers.jpg",
-    ano_lancamento: 2016,
-    genero: "Drama, Suspense",
-    elenco: [" Eric McCormack, MacKenzie Porter, Nesta Cooper"],
-    duracao: "45 min",
-    nota_avaliacao: 8.1,
-    numero_comentarios: 12000,
-    faixa_etaria: "16+",
-    indicacoes_premios: ["Oscar"],
-    sinopse: "Centenas de anos no futuro, os humanos sobreviventes descobrem como enviar a consciência humana de volta no tempo, para dentro de pessoas que vivem no século XXI. Esses viajantes assumem as vidas de outras pessoas, enquanto tentam salvar a humanidade de um futuro terrível. "
+    sinopse: "Na ilha de Berk, lutar contra dragões é um estilo de vida. Soluço, um jovem viking, muda tudo quando faz amizade com um temido dragão da espécie Fúria da Noite, provando que humanos e dragões podem conviver em paz."
   },
 ];

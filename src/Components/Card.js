@@ -10,6 +10,7 @@ function CardPerfil ({usuario}){
             <img src={usuario.foto} className="fotoPerfil"></img>
 
             <span className='NomePerfil'>
+                
                 {usuario.nome}
             </span>
 

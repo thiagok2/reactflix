@@ -1,49 +1,59 @@
-.detInical{
+.detInical {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     padding-top: 370px;
     margin-left: 60px;
     color: white;
+    /* border: solid 2px red; */
+   
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     width: 400px;
     font-family: "Chelsea Market", serif;
     font-weight: 400;
     font-style: normal;
+       /* border: solid 2px red; */
 }
 
-.nomeFilme1{
-    font-size: 60px;    
+.nomeFilme1 {
+    font-size: 60px;
     font-weight: 600;
 }
 
-.nomeFilme2{
+.nomeFilme2 {
     width: 300px;
     font-weight: 500;
     font-size: 20px;
 }
 
-.info{
+.info-pai {
     display: flex;
-    flex-direction: row;
-    align-items: center;   /* Centraliza os elementos na vertical */
+    flex-direction: column;
     justify-content: space-between;
+    transition-duration: none;
+ 
+   
     margin-top: 40px;
-    gap: 20px;   
+    
+  /* border: solid 2px red; */
+
 }
 
-.option{
+.option {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    gap: 15px;   /* Espaço entre os botões */
+    justify-content: space-between;
+  margin-right: 40px;
+  transition-duration: none;
+ 
+    
 }
 
-.assistir{
+.assistir {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,49 +69,54 @@
     border: none;
 }
 
-.assistir:hover{
+.assistir:hover {
     background-color: #e6e6e6;
 }
+.mais{
+    color: rgb(219, 218, 218);
+    
+}
 
-.maisinfo{
+.mais-informacoes {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
-    background-color: #FFFFFF44;
-    color: white;
+    background-color: #1f191944;
+    color: rgb(250, 250, 250);
     font-weight: 500;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 30px;
+    
+
     padding: 12px 28px;
     cursor: pointer;
     transition: 0.3s;
     border: none;
+  text-decoration: none;
 }
 
-.maisinfo:hover{
-    background-color: #FFFFFF66;
+/* CORRIGIDO: O seletor agora corresponde à classe do botão */
+.mais-informacoes:hover {
+    background-color: #8d8d8d66;
+
 }
 
-.infos{
+.infos {
     display: flex;
-   flex-direction: row;
     flex-direction: row;
     align-items: flex-end;
     gap: 10px;
     padding: 10px;
     font-size: 40px;
-    
 }
 
-.logoNet{
+.logoNet {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.volume{
-    
+.volume {
     border-radius: 100%;
     padding: 10px;
     width: 23px;
@@ -109,30 +124,18 @@
     border: solid;
 }
 
-.idade{
-    width: 40px;
-    height: 40px;
-    background-color: #F5C323;
-    color: black;
-    border-radius: 5px;
-    border: 0.5px solid black;
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-   
-}
 
-.circulo{
+.circulo {
     width: 10px;
     height: 30px;
 }
 
-.logo{
+.logo {
     color: red;
     width: 24px;
     height: 24px;
 }
 
-.nomeFilm{
+.nomeFilm {
     color: rgb(203, 203, 203);
 }
