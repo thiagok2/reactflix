@@ -7,6 +7,7 @@ function FilmeHeader({ filme }) {
     return (
         <div className='PaiHeader'>
             <div className='infoFilme'>
+                <span>Stranger Things</span>
                 <div className='Tempo'>Duração: {filme.duracao}</div>
 
                 <div className='classificacao'>

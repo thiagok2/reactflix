@@ -39,8 +39,8 @@
 }
 
 .idade {
-    min-width: 35px;
-    height: 35px;
+    min-width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;

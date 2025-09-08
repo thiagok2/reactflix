@@ -18,7 +18,7 @@ export const filmes = [
   },
   {
     id: 2,
-    titulo: "Peak Blinders",
+    titulo: "Peaky Blinders",
     fotoThumbnail: "../Imagens/peak.jpg",
     ano_lancamento: 2013,
     tipo: "s",
