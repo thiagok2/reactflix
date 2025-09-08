@@ -1,7 +1,7 @@
 import CardFilme from "./CardFilme";
 import "./Carrossel.css";
 
-function Carrossel ({descricao, listadeFilmes}) {
+function Carrossel ({listadeFilmes, descricao}) {
     return(
         <div className="minhaLista">
 

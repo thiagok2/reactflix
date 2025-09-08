@@ -5,6 +5,7 @@ import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { PiDevicesLight } from "react-icons/pi";
 import { CiFaceSmile } from "react-icons/ci";
 import { FaArrowLeft } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function MenuLateral() {
 
@@ -14,14 +15,14 @@ function MenuLateral() {
 
             <div className="secao">
                 <FaArrowLeft className="icon" />
-                <a>Voltar à Netflix</a>
+                <Link to={"/home"}>
+                    <span>Voltar à Netflix</span>
+                </Link>
 
             </div>
 
-
             <div >
 
-                    
                 <div className="secao">
                     <PiHouseFill className="icon" />
                     <span>Visão geral</span>

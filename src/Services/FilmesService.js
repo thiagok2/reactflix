@@ -14,6 +14,10 @@ class FilmesService {
         const random = Math.floor(Math.random() * (this.todosFilmes.length));
         return this.todosFilmes[random];
     }
+
+    getFilmesPorTipo(tipo) {
+        return this.todosFilmes.filter(f => f.tipo == tipo);
+    }
 }
 
 export default new FilmesService();

@@ -2,6 +2,7 @@ export const filmes = [
   {
     id: 1,
     titulo: "Stranger Things",
+    slug:"stranger-things",
     fotoThumbnail: "../Imagens/stranger.jpg",
     ano_lancamento: 2016,
     tipo: "s",
@@ -36,6 +37,7 @@ export const filmes = [
     titulo: "Suits",
     fotoThumbnail: "../Imagens/suitscapa.webp",
     ano_lancamento: 2011,
+    tipo: "s",
     genero: "Drama, Jurídico",
     elenco: ["Gabriel Macht", "Patrick J. Adams", "Meghan Markle"],
     duracao: "42min",
@@ -50,6 +52,7 @@ export const filmes = [
     titulo: "The Umbrella Academy",
     fotoThumbnail: "../Imagens/theumbrella.jpg",
     ano_lancamento: 2019,
+    tipo: "s",
     genero: "Ação, Fantasia",
     elenco: ["Elliot Page", "Aidan Gallagher", "Robert Sheehan"],
     duracao: "55min",
@@ -62,6 +65,7 @@ export const filmes = [
   {
     id: 5,
     titulo: "The Kingdom",
+    tipo: "s",
     fotoThumbnail: "../Imagens/theking.jpg",
     ano_lancamento: 2019,
     genero: "Drama Histórico",
@@ -76,6 +80,7 @@ export const filmes = [
   {
     id: 6,
     titulo: "Lupin",
+    tipo: "s",
     fotoThumbnail: "../Imagens/lupin.jpg",
     ano_lancamento: 2021,
     genero: "Suspense, Crime",
@@ -93,6 +98,7 @@ export const filmes2 = [
   {
     id: 7,
     titulo: "Round 6",
+    tipo: "s",
     fotoThumbnail: "../Imagens/round.jpg",
     ano_lancamento: 2021,
     genero: "Drama, Suspense",
@@ -108,6 +114,7 @@ export const filmes2 = [
     id: 8,
     titulo: "La Casa de Papel",
     fotoThumbnail: "../Imagens/lacasapapel.jpeg",
+    tipo: "s",
     ano_lancamento: 2017,
     genero: "Ação, Crime",
     elenco: ["Álvaro Morte", "Úrsula Corberó"],
@@ -122,6 +129,7 @@ export const filmes2 = [
     id: 9,
     titulo: "Ragnarok",
     fotoThumbnail: "../Imagens/ragnarok.jpg",
+    tipo: "s",
     ano_lancamento: 2020,
     genero: "Fantasia, Drama",
     elenco: ["David Stakston", "Herman Tømmeraas"],
@@ -135,6 +143,7 @@ export const filmes2 = [
   {
     id: 10,
     titulo: "Prisão",
+    tipo: "f",
     fotoThumbnail: "../Imagens/prisao.webp",
     ano_lancamento: 2017,
     genero: "Ação, Crime",
@@ -150,6 +159,7 @@ export const filmes2 = [
     id: 11,
     titulo: "Narcos",
     fotoThumbnail: "../Imagens/narcos.jpeg",
+    tipo: "s",
     ano_lancamento: 2015,
     genero: "Crime, Drama",
     elenco: ["Wagner Moura", "Pedro Pascal"],
@@ -163,6 +173,7 @@ export const filmes2 = [
   {
     id: 12,
     titulo: "A Vadia",
+    tipo: "f",
     fotoThumbnail: "../Imagens/vadia.jpg",
     ano_lancamento: 2018,
     genero: "Terror",
