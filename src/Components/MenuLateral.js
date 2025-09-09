@@ -13,13 +13,10 @@ function MenuLateral() {
 
         <div className="lateral">
 
-            <div className="secao">
-                <FaArrowLeft className="icon" />
-                <Link to={"/home"}>
-                    <span>Voltar à Netflix</span>
-                </Link>
-
-            </div>
+            <Link className="secao">
+                <FaArrowLeft className="icon" to = '/home '/>
+                <Link to='/home' className="config-menu-lateral">    Voltar à Netflix</Link>
+            </Link>
 
             <div >
 

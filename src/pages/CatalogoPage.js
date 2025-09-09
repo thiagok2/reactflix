@@ -1,44 +1,63 @@
 import './CatalogoPage.css'
-import cabana from '../Imagens/cabana.jpg'
 
 import NavBar from '../Components/NavBar';
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import filmesService from '../Services/FilmesService';
 
 function CatalogoPage() {
 
     const {tipo} = useParams();
-    let paramTipo = tipo == "series" ? "s":"f";
+    let paramTipo = tipo === "series" ? "s":"f";
 
     console.log(tipo);
 
-    const filmes = filmesService.getFilmesPorTipo(paramTipo);
+    const filmeList = filmesService.getFilmesPorTipo(paramTipo);
 
-    console.log(filmes);
+    console.log(filmeList);
 
     return (
-        <div className='paicatalogo'>
+        <div className='container'>
             <div className='navbar'>
                 <NavBar />
             </div>
 
             <div className='containers-catalogo'>
                 {
-                    filmes.map((filme, idx) => (
-                        <div key={idx}>
+                    filmeList.map((filme, idx) => 
+                        <Link key={idx} className='container-filme'>
+                            <div className='header-filme'>
+                                <h3 className='filme-titulo'>{filme.titulo}</h3>
+                                <span className="filme-comentarios">{filme.numero_comentarios}</span>
+                            </div>
+                            
                             <div className='img-container'>
-                                <img src={filme.fotoThumbnail} className='foto' alt="A Cabana" />
+                                <Link className='card-filmes' to={`/filme/${filme.id}`} > 
+                                    <img src={filme.fotoThumbnail} className='foto' alt={filme.titulo} />
+                                </Link>
                             </div>
+
+                            <div className='subfilme-container'>
+                                <div className='subitem-header'>{filme.nota_avaliacao}</div>
+                                <div className='subitem-header'>{filme.faixa_etaria}</div>
+                            </div>
+
+                            { filme.temporadas &&
+                                <div className='item-opcional'>{filme.temporadas} temporadas</div>
+                            }
+                            
                             <div className='introducao'>
-                                Descrição: {filme.sinopse}
+                                {filme.sinopse}
                             </div>
-                            <div className='diretor-escritor'>
-                                <div className='diretor'> Diretor: {filme.elenco}</div>
-                                <div className='escritor'> Gênero: {filme.genero}</div>
+                            <div className='footer-filme'>
+                                <div className='footer-item'> {filme.elenco}</div>
+                                <div className='footer-item'> {filme.genero}</div>
+                                <div className='footer-item'>Lançamento: {filme.ano_lancamento}</div>
+                                {filme.indicacoes_premios?.length > 0 &&
+                                    <div className='footer-item'>Indicações: {filme.indicacoes_premios}</div>
+                                }
                             </div>
-                        </div>
-                    ))
-                    
+                        </Link>
+                    )
                 }
                 
             </div>

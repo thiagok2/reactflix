@@ -1,4 +1,4 @@
-.nav-bar{
+.nav-bar-pai{
     position: fixed;
     top: 0;
     left: 0;
@@ -15,52 +15,65 @@
     background-image: linear-gradient(to top, #6f6f6f01, #000000FF);
     z-index: 1000;
     
+ 
+    
 }
 
 .link{
     cursor: pointer;
     transition:  color 200ms ease;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
 
 }
 
 .imagem{
     display: flex;
     align-items: center;
-    height: 90px;
+    height: 100px;
     
 }
 
 .link:hover{
     color:rgb(169, 169, 169);
+    text-decoration: none;
     
 }
 
-.navegue{
+.nav-bar-link{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    text-decoration: none;
+    
     
 }
 
-.conta{
+.nav-bar-conta{
     display: flex;
     margin-right: 100px;
     gap: 10px;
+     align-items: center;
     cursor: pointer;
     transition:  color 200ms ease;
+    font-size: 25px;
     
 }
 
 .linkconta{
-    text-decoration: none;
-    color: white;
 
+    
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
 
 }
 
 .conta:hover{
     color:rgb(169, 169, 169);
+
 
 
 }

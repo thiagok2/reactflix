@@ -4,7 +4,7 @@ import Nome from "../Components/FilmeNome"
 import Header from '../Components/FilmeHeader'
 import Elenco from '../Components/FilmeElenco'
 import ComentariosContainer from '../Components/ComentariosContainer'
-
+import { Link } from "react-router-dom";
 import { filmes } from '../Services/FilmesMock';
 import Carrossel from "../Components/Carrossel";
 import filmeService from "../Services/FilmesService";

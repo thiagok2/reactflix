@@ -18,6 +18,14 @@ class FilmesService {
     getFilmesPorTipo(tipo) {
         return this.todosFilmes.filter(f => f.tipo === tipo);
     }
+
+    getFilmes() {
+         return this.todosFilmes.filter(f => f.tipo === "f");
+    }
+
+    getSeries() {
+        return this.todosFilmes.filter(f => f.tipo === "s");
+    }
 }
 
 export default new FilmesService();

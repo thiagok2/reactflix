@@ -5,13 +5,12 @@
     color: black;
     gap: 40px;
     width: 300px;
+    text-decoration: none;
+
     
 }
 
-.secao:hover{
-    background-color: rgb(223, 223, 223);
 
-}
 
 .secao{
     border-radius: 3px;
@@ -21,11 +20,24 @@
     padding: 10px;
     gap: 12px;
     transition: background-color 70ms ease;
+    text-decoration: none;
 
 }
+.secao:hover{
+    background-color: rgb(223, 223, 223);
+   
 
+}
 .icon{
     height: 30px;
+    text-decoration: none;
     width: 30px;
+    color: black;
 
+
+}
+.config-menu-lateral{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
 }

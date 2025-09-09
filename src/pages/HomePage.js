@@ -6,11 +6,14 @@ import Carrossel from "../Components/Carrossel";
 import CarroselNum from "../Components/CarroselNum";
 import FilmeDestaque from "../Components/FilmeDestaque";
 
-import {filmes, filmes2, filmesNum} from '../Services/FilmesMock';
+import {filmesNum} from '../Services/FilmesMock';
 
 function HomePage(){
     
     const filmeTopo = filmeService.getRandomFilme();
+
+    const series = filmeService.getSeries();
+    const filmes = filmeService.getFilmes();
 
     return(
         <div className="tela" style={{ backgroundImage: `url(${filmeTopo.fotoThumbnail})` }}>
@@ -20,8 +23,8 @@ function HomePage(){
                 <FilmeDestaque filme={filmeTopo}/>
 
                 <div className="todosFilme">
-                    <Carrossel listadeFilmes={filmes} descricao="Novidades na Netflix"/>
-                    <Carrossel listadeFilmes={filmes2} descricao="Descubra suas próximas hitórias"/>
+                    <Carrossel listadeFilmes={filmes} descricao="Filmes novos"/>
+                    <Carrossel listadeFilmes={series} descricao="Novidades nas séries"/>
                     <CarroselNum listaNumerada ={filmesNum}/>
 
                 </div>
