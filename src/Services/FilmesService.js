@@ -16,7 +16,7 @@ class FilmesService {
     }
 
     getFilmesPorTipo(tipo) {
-        return this.todosFilmes.filter(f => f.tipo == tipo);
+        return this.todosFilmes.filter(f => f.tipo === tipo);
     }
 }
 
