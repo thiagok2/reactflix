@@ -9,11 +9,7 @@ function CatalogoPage() {
     const {tipo} = useParams();
     let paramTipo = tipo === "series" ? "s":"f";
 
-    console.log(tipo);
-
     const filmeList = filmesService.getFilmesPorTipo(paramTipo);
-
-    console.log(filmeList);
 
     return (
         <div className='container'>
@@ -26,7 +22,7 @@ function CatalogoPage() {
                     filmeList.map((filme, idx) => 
                         <Link key={idx} className='container-filme'>
                             <div className='header-filme'>
-                                <h3 className='filme-titulo'>{filme.titulo}</h3>
+                                <span className='filme-titulo'>{filme.titulo}</span>
                                 <span className="filme-comentarios">{filme.numero_comentarios}</span>
                             </div>
                             
@@ -36,7 +32,7 @@ function CatalogoPage() {
                                 </Link>
                             </div>
 
-                            <div className='subfilme-container'>
+                            <div className='filme-subtitulo'>
                                 <div className='subitem-header'>{filme.nota_avaliacao}</div>
                                 <div className='subitem-header'>{filme.faixa_etaria}</div>
                             </div>

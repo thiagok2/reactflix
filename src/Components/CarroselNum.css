@@ -38,12 +38,16 @@
 
 .fotoNum {
     display: flex;
-    width: 190px;
+    width: 320px;
     height: 250px;
     margin-left: -30px;
     margin-top: 22px;
     border-radius: 10px;
     flex-shrink: 0;
+    /*opacity: 0.85;*/
+
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 1));
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 1));
 }
 
 .fotoNum:hover {
