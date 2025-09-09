@@ -23,10 +23,9 @@
     flex-direction: column;
     margin-left: 15px;  
 
-    width: 350px;
+    width: 370px;
     height: 200px;
     border-radius: 20px;
-    object-fit: cover;
 }
 
 .container-filme {
@@ -52,7 +51,9 @@
 
 .header-filme {
     display: flex;
-    flex-direction: column;
+    margin: 5px 15px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .foto {
@@ -63,6 +64,17 @@
     height: 200px;
     object-fit: cover;
     border-radius: 5px 5px 0 0;
+}
+
+.subfilme-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.item-opcional{
+    padding: 5px 15px;
 }
 
 .introducao {
@@ -88,10 +100,7 @@
 }
 
 .filme-titulo{
-    display: flex;
-    flex-direction: row;
     color: aliceblue;
-    margin-left: 22px;
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
