@@ -15,7 +15,7 @@ function CarroselNum({ listaNumerada }) {
             <div className='carroselNum'>
               {
               listaNumerada.map(filme => (
-                      <Link to={`/filme/${filme.id}`}>
+                      <Link to={`/filme/${filme.id}`} class="link-num">
                         <div className='conjuntoNum'>
                             <span className='numero'>{i++}</span>
                             <img src={filme.fotoThumbnail} className="fotoNum" />
