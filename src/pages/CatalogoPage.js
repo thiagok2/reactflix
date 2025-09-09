@@ -16,7 +16,7 @@ function CatalogoPage() {
     console.log(filmeList);
 
     return (
-        <div className='paicatalogo'>
+        <div className='container'>
             <div className='navbar'>
                 <NavBar />
             </div>
@@ -25,23 +25,36 @@ function CatalogoPage() {
                 {
                     filmeList.map((filme, idx) => 
                         <Link key={idx} className='container-filme'>
-                            <h3 className='titulo-catalogo'>{filme.titulo}</h3>
+                            <div className='header-filme'>
+                                <h3 className='filme-titulo'>{filme.titulo}</h3>
+                                <span className="filme-comentarios">{filme.numero_comentarios}</span>
+                            </div>
+                            
                             <div className='img-container'>
                                 <Link className='card-filmes' to={`/filme/${filme.id}`} > 
-                                
                                     <img src={filme.fotoThumbnail} className='foto' alt={filme.titulo} />
-                            
                                 </Link>
-                                         <div className='idade-catalogo'>{filme.faixa_etaria} </div>
                             </div>
 
+                            <div className='subfilme-container'>
+                                <div className='subitem-header'>{filme.nota_avaliacao}</div>
+                                <div className='subitem-header'>{filme.faixa_etaria}</div>
+                            </div>
+
+                            { filme.temporadas &&
+                                <div className='item-opcional'>{filme.temporadas} temporadas</div>
+                            }
                             
                             <div className='introducao'>
-                                Descrição: {filme.sinopse}
+                                {filme.sinopse}
                             </div>
-                            <div className='diretor-escritor'>
-                                <div className='diretor'> {filme.elenco}</div>
-                                <div className='escritor'> {filme.genero}</div>
+                            <div className='footer-filme'>
+                                <div className='footer-item'> {filme.elenco}</div>
+                                <div className='footer-item'> {filme.genero}</div>
+                                <div className='footer-item'>Lançamento: {filme.ano_lancamento}</div>
+                                {filme.indicacoes_premios?.length > 0 &&
+                                    <div className='footer-item'>Indicações: {filme.indicacoes_premios}</div>
+                                }
                             </div>
                         </Link>
                     )
