@@ -1,40 +1,17 @@
 import "./ProfilesPage.css";
 
-import eleven from '../Imagens/eleven.jpeg';
-import lacasa from '../Imagens/lacasa.jpeg';
-import kids from '../Imagens/kids.png';
-import adiconar from '../Imagens/+.png';
+
 import SelecaoPerfil from "../Components/SelecaoPerfil";
+import { Usuarios } from "../Services/UsuarioMock";
 
 function ProfilePage () {
-  
-  const usuario1 = {
-    nome: 'Guilherme',
-    foto: eleven
+  const usuarioLimitador = [...Usuarios].sort(() => Math.random() - 0.5).slice(0,4);
+ return(
+   <div className="App">
     
-  };
-  const usuario2 = {
-    nome: 'Givanildo',
-    foto: lacasa
-    
-  };
-  const perfilkids = {
-    nome: 'Kids',
-    foto: kids
-    
-  };
-  const adicionarperfil = {
-    nome: 'Adicionar Perfil',
-    foto: adiconar
-    
-  };
-      
-      const usuarios = [usuario1, usuario2, perfilkids, adicionarperfil]
-      
-      return( 
-       <SelecaoPerfil listaDeUsuarios={usuarios}/>
-       
-      );
+      <SelecaoPerfil listaDeUsuarios={usuarioLimitador} /> 
+    </div>
+ )
 };
 
    

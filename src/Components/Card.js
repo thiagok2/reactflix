@@ -7,11 +7,11 @@ function CardPerfil ({usuario}){
 
         <Link to="/home"className="Perfil">
 
-            <img src={usuario.foto} className="fotoPerfil"></img>
+            <img src={usuario. avatarImage} className="fotoPerfil"></img>
 
             <span className='NomePerfil'>
                 
-                {usuario.nome}
+                {usuario.apelidoName}
             </span>
 
         </Link>

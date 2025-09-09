@@ -1,12 +1,13 @@
 import "./BotaoVazado.css"
+import { Link } from "react-router-dom";
 
 function BotaoVazado () {
 
     return(
 
-        <span className="botao-vazado">
+        <Link className="botao-vazado">
             GERENCIAR PERFIL
-        </span>
+        </Link>
   
     );
 
