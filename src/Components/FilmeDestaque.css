@@ -4,7 +4,6 @@
     padding-top: 370px;
     margin-left: 60px;
     color: white;
-    /* border: solid 2px red; */
    
 }
 
@@ -15,7 +14,6 @@
     font-family: "Chelsea Market", serif;
     font-weight: 400;
     font-style: normal;
-       /* border: solid 2px red; */
 }
 
 .nomeFilme1 {
@@ -27,6 +25,7 @@
     width: 300px;
     font-weight: 500;
     font-size: 20px;
+    
 }
 
 .info-pai {
@@ -38,7 +37,6 @@
    
     margin-top: 40px;
     
-  /* border: solid 2px red; */
 
 }
 
@@ -47,7 +45,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  margin-right: 40px;
+    margin-right: 40px;
   transition-duration: none;
  
     
@@ -93,6 +91,7 @@
     transition: 0.3s;
     border: none;
   text-decoration: none;
+  
 }
 
 /* CORRIGIDO: O seletor agora corresponde à classe do botão */
@@ -138,4 +137,15 @@
 
 .nomeFilm {
     color: rgb(203, 203, 203);
+}
+.filme-card {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 700px;        
+    width: fit-content;      
+
 }

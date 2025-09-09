@@ -21,25 +21,30 @@ const Classificacao = ({ idade }) => {
 
 function FilmeDestaque({ filme }) {
     return (
+        
         <div className="detInical">
-            <div className="logoNet">
-                <SiNetflix className="logo" />
-                <span className="nomeFilm">F I L M E</span>
-            </div>
+            <div className="filme-card">  
 
-            <div className="title">
-                <span className="nomeFilme1"> {filme.titulo} </span>
-                <span className="nomeFilme2"> {filme.genero} </span>
-            </div>
-
-            <div className="info-pai">
-                <div className="option">
-                    <Link to="/filme" className="mais-informacoes">
-                        <CiCircleInfo className="ciculo" />
-                        <span className="mais"> Mais informações</span>
-                    </Link>
-                    <Classificacao idade={filme.faixa_etaria} />
+                <div className="logoNet">
+                    <SiNetflix className="logo" />
+                    <span className="nomeFilm">F I L M E</span>
                 </div>
+
+                <div className="title">
+                    <span className="nomeFilme1"> {filme.titulo} </span>
+                    <span className="nomeFilme2"> {filme.genero} </span>
+                </div>
+
+                <div className="info-pai">
+                    <div className="option">
+                        <Link to="/filme" className="mais-informacoes">
+                            <CiCircleInfo className="ciculo" />
+                            <span className="mais"> Mais informações</span>
+                        </Link>
+                        <Classificacao idade={filme.faixa_etaria} />
+                    </div>
+                </div>
+
             </div>
         </div>
     );
