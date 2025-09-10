@@ -19,9 +19,9 @@ function NavBar() {
         <div className="nav-bar-pai">
 
             <div className="nav-bar-link">
-
-                <img src={logo} className="imagem"></img>
-                
+                <Link to="/"  className="link">
+                    <img src={logo} className="imagem"></img>
+                </Link>                
 
                 <Link to="/home"  className="link"  >
                     <span>Início</span>
