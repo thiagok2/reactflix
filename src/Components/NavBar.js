@@ -2,9 +2,18 @@ import "./NavBar.css"
 import logo from "../Imagens/netflix.png"
 import { FaRegUser } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from "react";
 
 function NavBar() {
 
+    const [usuario, setUsuario] = useState(null);
+
+    useEffect(() => {
+        const u = localStorage.getItem('usuarioLogado');
+        setUsuario(JSON.parse(u));
+    },[]);
+
+    console.log(usuario);
     return (
 
         <div className="nav-bar-pai">
@@ -35,10 +44,9 @@ function NavBar() {
             </div>
 
             <div className="nav-bar-conta">
-                <FaRegUser />
-
+                <img src={usuario?.avatarImage} className="foto-conta"></img>
                 <Link to="/config" className="linkconta">
-                    <span >Conta</span>
+                    <span >{usuario?.apelidoName}</span>
                 </Link>
 
             </div>

@@ -1,6 +1,6 @@
 import "./SelecaoPerfil.css";
 import BotaoVazado from "./BotaoVazado";
-import CardPerfil from "./Card";
+import CardPerfil from "./CardPerfil";
 
 
 function SelecaoPerfil ({listaDeUsuarios}) {
