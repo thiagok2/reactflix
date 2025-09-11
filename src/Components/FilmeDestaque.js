@@ -12,7 +12,7 @@ const Classificacao = ({ idade }) => {
         padding: '5px',
         borderRadius: '5px',
         backgroundColor: 'rgba(0,0,0,0.5)',
-        fontSize: '20px'
+        fontSize: '20px',
     };
 
     return <span style={estilo}>{idade}</span>;
@@ -41,7 +41,7 @@ function FilmeDestaque({ filme }) {
                             <CiCircleInfo className="ciculo" />
                             <span className="mais"> Mais informações</span>
                         </Link>
-                        <Classificacao idade={filme.faixa_etaria} />
+                        <Classificacao idade={filme.faixa_etaria}/>
                     </div>
                 </div>
 
