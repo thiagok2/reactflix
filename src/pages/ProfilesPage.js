@@ -8,7 +8,6 @@ function ProfilePage () {
   const usuarioLimitador = [...usuarios].sort(() => Math.random() - 0.5).slice(0,4);
  return(
    <div className="App">
-    
       <SelecaoPerfil listaDeUsuarios={usuarioLimitador} /> 
     </div>
  )

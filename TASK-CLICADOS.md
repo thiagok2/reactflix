@@ -1,30 +1,22 @@
-// arquivo: src/components/FilmeDestaque.js
+FILME-DESTAQUE
+```js
 
-import "./FilmeDestaque.css";
-import { CiCircleInfo } from "react-icons/ci";
-import { SiNetflix } from "react-icons/si";
-import { Link } from "react-router-dom";
-
-// Componente para renderizar a classificação de idade
-const Classificacao = ({ idade }) => {
-    const estilo = {
-        border: '2px solid white',
-        padding: '5px',
-        borderRadius: '5px',
-        backgroundColor: 'rgba(0,0,0,0.5)',
-        fontSize: '20px',
-    };
-
-    return <span style={estilo}>{idade}</span>;
-}
-
+...
 
 function FilmeDestaque({ filme }) {
 
 
     const handleAddInteresse = () => {
-        
-        console.log('add filme destaque: ' + filme.titulo);
+        //RECUPERAR UM OBJETO localstorage 'filmesClicados';
+        //CASO ELE NAO EXISTA, CRIAR UM objeto 'filmesClicados'
+
+        //caso haja o objeto, fazer o JSON.parse, para recuperar a lista de valores ja como objeto
+        //caso nao haja, a lista inicia como vazia([]).
+
+        //adiciona o filme desse destaque, o filme q foi passado no props, e já está no componente(filme) na lista filmesClicados.
+
+        //uma adicionado a variavel, atualizar o conteudo dela no localstorage(setItem). Lembrar que precisa fazer o JSON.stringfy sobre filmesClicados.
+       
     }
 
     return (
@@ -58,3 +50,5 @@ function FilmeDestaque({ filme }) {
 }
 
 export default FilmeDestaque;
+
+```

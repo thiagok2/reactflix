@@ -9,7 +9,7 @@ const CardPerfil = ({ usuario }) => {
 
     return(
 
-        <Link to="/home"className="Perfil" onClick={handleClick}>
+        <Link to="/home" className="Perfil" onClick={handleClick}>
 
             <img src={usuario.avatarImage} className="fotoPerfil"></img>
 

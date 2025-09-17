@@ -10,10 +10,10 @@ function NavBar() {
 
     useEffect(() => {
         const u = localStorage.getItem('usuarioLogado');
+        
         setUsuario(JSON.parse(u));
     },[]);
 
-    console.log(usuario);
     return (
 
         <div className="nav-bar-pai">
