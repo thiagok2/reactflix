@@ -4,16 +4,15 @@
 https://github.com/thiagok2/reactflix.git 
 
 ## Possíveis componentes:
-1. CardFilme                                                        Maria Karoline
-2. FilmePage -                                                      Ana Luiza
-3. CatalogoFilme - criar FilmeCatalogoCard
-4. ComentariosContainer - Sugestão: criar ComentarioCard e refatorar
-5. CarrosselNum - Usar FilmeCard, refatorar                         Iran
-7. Criar UsuarioPage / Playlist* - 
+1. CardFilme                                                            Maria Karoline
+2. FilmePage -                                                          Ana Luiza
+3. CatalogoFilme - criar FilmeCatalogoCard                              Lívia
+4. ComentariosContainer - Sugestão: criar ComentarioCard e refatorar    Givanildo
+5. CarrosselNum - Usar FilmeCard, refatorar                             Iran
+6. Criar UsuarioPage / Playlist* -                                      Talys
     Na página do usuário, vai ser listadas várias playlists;
     Criar playlistMock.js
-    coleção de filmes de um individuo
-
+  
 ## Passo a passo
 
 0. Fazer clone do projeto
