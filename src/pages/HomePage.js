@@ -15,6 +15,8 @@ function HomePage(){
     const series = filmeService.getSeries();
     const filmes = filmeService.getFilmes();
 
+    const clicados = filmeService.getClicados();
+
     return(
         <div className="tela" style={{ backgroundImage: `url(${filmeTopo.fotoThumbnail})` }}>
             
@@ -25,6 +27,11 @@ function HomePage(){
                 <div className="todosFilme">
                     <Carrossel listadeFilmes={filmes} descricao="Filmes novos"/>
                     <Carrossel listadeFilmes={series} descricao="Novidades nas séries"/>
+                    
+                    {
+                      clicados?.length && <Carrossel listadeFilmes={clicados} descricao="Filmes do seu interesse"/>
+                    }
+                    
                     <CarroselNum listaNumerada ={filmesNum}/>
 
                 </div>

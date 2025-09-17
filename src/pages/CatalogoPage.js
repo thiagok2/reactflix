@@ -11,6 +11,11 @@ function CatalogoPage() {
 
     const filmeList = filmesService.getFilmesPorTipo(paramTipo);
 
+    const handleAddClicados = (filme) => {
+        filmesService.addFilmeClicado(filme);
+
+    }
+
     return (
         <div className='container'>
             <div className='navbar'>
@@ -20,7 +25,7 @@ function CatalogoPage() {
             <div className='containers-catalogo'>
                 {
                     filmeList.map((filme, idx) => 
-                        <Link key={idx} className='container-filme'>
+                        <Link key={idx} className='container-filme' onClick={() => handleAddClicados(filme)}>
                             <div className='header-filme'>
                                 <span className='filme-titulo'>{filme.titulo}</span>
                                 <span className="filme-comentarios">{filme.numero_comentarios}</span>

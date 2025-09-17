@@ -4,6 +4,7 @@ import "./FilmeDestaque.css";
 import { CiCircleInfo } from "react-icons/ci";
 import { SiNetflix } from "react-icons/si";
 import { Link } from "react-router-dom";
+import filmesService from "../Services/FilmesService";
 
 // Componente para renderizar a classificação de idade
 const Classificacao = ({ idade }) => {
@@ -23,8 +24,7 @@ function FilmeDestaque({ filme }) {
 
 
     const handleAddInteresse = () => {
-        
-        console.log('add filme destaque: ' + filme.titulo);
+        filmesService.addFilmeClicado(filme);
     }
 
     return (

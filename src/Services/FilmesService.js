@@ -26,6 +26,31 @@ class FilmesService {
     getSeries() {
         return this.todosFilmes.filter(f => f.tipo === "s");
     }
+
+    addFilmeClicado(filme){
+        const filmesClicadosStr = localStorage.getItem('filmesClicados');
+        let filmesClicados =[];
+        if(filmesClicadosStr){
+             filmesClicados = JSON.parse(filmesClicadosStr);
+        }
+
+        const jaClicado = filmesClicados.some(f => f.id === filme.id);
+        if(!jaClicado) {
+             filmesClicados.push(filme);
+             localStorage.setItem('filmesClicados', JSON.stringify(filmesClicados));
+
+        }
+    }
+
+    getClicados() {
+        const filmesClicadosStr = localStorage.getItem('filmesClicados');
+        let filmesClicados =[];
+        if(filmesClicadosStr){
+             filmesClicados = JSON.parse(filmesClicadosStr);
+        }
+
+        return filmesClicados;
+    }
 }
 
 export default new FilmesService();
