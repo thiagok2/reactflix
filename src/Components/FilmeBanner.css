@@ -8,7 +8,7 @@
 .BannerImg{
     border-radius: 20px;
     border-radius: 20px;
-    width: 100%;
+    width: 95%;
 
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 85%, rgba(0,0,0,0));
     -webkit-mask-repeat: no-repeat;
