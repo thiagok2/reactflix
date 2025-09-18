@@ -1,0 +1,15 @@
+.perfil-page {
+  background-color: #f0f0f0; /* muda o fundo */
+  min-height: 100vh;          /* garante que ocupe toda a tela */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.perfil-page h1 {
+  color: #26272B; /* seu tom preferido */
+}
+
+.perfil-page p {
+  color: #333;
+  margin-top: 10px;
+}
