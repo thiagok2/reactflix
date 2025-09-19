@@ -1,51 +1,196 @@
+/* Corpo e página */
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
 .perfil-page {
-  background-color: white;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
-.titulo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.subtitulo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.playlist {
+/* Cabeçalho superior */
+.parte-superior {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 100px;
+  border-bottom: 2px solid gray;
 }
 
-.filme-card {
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 10px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+
+
+.nav-bar-conta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.filme-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+.foto-conta {
+  width: 50px;
+  height: 50px;
+
 }
 
-.filme-titulo {
-  margin-top: 8px;
-  font-size: 16px;
+.foto-conta:hover {
+  transform: scale(1.1);
+}
+
+.linkconta {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+.linkconta:hover {
+  color: #e50914;
+}
+
+/* Informações do usuário */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Títulos */
+h2, .titulo {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.filme-info {
-  font-size: 14px;
-  color: #555;
+h3, .subtitulo {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #e50914;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Loading animado (bola girando) */
+.loader {
+  border: 4px solid #2a2a2a;
+  border-top: 4px solid #e50914;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Carrossel */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #e50914;
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: #2a2a2a;
+}
+
+/* Card do filme */
+.filme-card {
+  width: 220px;           
+  height: 330px;          
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper para imagem proporcional */
+.filme-img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1f1f1f;
+}
+
+.filme-img-wrapper img {
+  width: 100%;
+  height: auto; /* mantém proporção */
+  object-fit: contain; /* não corta nem distorce */
+  display: block;
+}
+
+/* Nome do filme sobreposto */
+.filme-titulo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Hover efeito profissional */
+.filme-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(229,9,20,0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .parte-superior {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .filme-card {
+    width: 180px;
+    height: 280px;
+  }
+
+  .filme-titulo {
+    font-size: 16px;
+    padding: 8px;
+  }
 }
