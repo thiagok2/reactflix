@@ -4,6 +4,7 @@ import NaveBar from "../Components/NavBar";
 import filmeService from "../Services/FilmesService";
 import Carrossel from "../Components/Carrossel";
 import CarroselNum from "../Components/CarroselNum";
+
 import FilmeDestaque from "../Components/FilmeDestaque";
 
 import {filmesNum} from '../Services/FilmesMock';
