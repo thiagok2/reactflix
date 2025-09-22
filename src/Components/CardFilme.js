@@ -4,7 +4,7 @@ import "./CardFilme.css";
 import filmesService from "../Services/FilmesService";
 import { IoMdStar } from "react-icons/io";
 
-function CardFilme({ filme }) {
+function CardFilme({ filme, expandido = false }) {
 
     if (!filme) {
         return null;

@@ -3,8 +3,11 @@
   import { Link } from 'react-router-dom';
   import logo from '../Imagens/netflix.png';
   import './PerfilPage.css';
+import NavBar from '../Components/NavBar.js';
+import Carrossel from '../Components/Carrossel.js';
 
   export default function PerfilPage() {
+    
     const [usuario, setUsuario] = useState(null);
     const [playlist, setPlaylist] = useState([]);
     const [series, setSeries] = useState([]);
@@ -27,51 +30,16 @@
 
     if (!usuario) return <p>Carregando usuário...</p>;
 
-    const renderCarousel = (titulo, lista) => (
-      <div style={{ marginTop: '30px' }}>
-        <h3>
-          {loading && <span className="loader"></span>}
-          {titulo}
-        </h3>
-        <div className="carousel">
-          {lista.length > 0 ? (
-            lista.map(filme => (
-              <Link key={filme.id} to={`/filme/${filme.id}`}>
-                <div className="filme-card">
-                  <img
-                    src={filme.fotoThumbnail.startsWith('/') ? filme.fotoThumbnail : `/${filme.fotoThumbnail}`}
-                    alt={filme.titulo}
-                    className="filme-img"
-                  />
-                  <div className="filme-titulo">{filme.titulo}</div>
-                </div>
-              </Link>
-            ))
-          ) : (
-            <p>Sem itens aqui.</p>
-          )}
-        </div>
-      </div>
-    );
+    
 
     return (
       <div className="perfil-page">
-        <div className='parte-superior'> 
-          <img src={logo} alt="Logo"/>
-          <div className="nav-bar-conta">
-            <img src={usuario.avatarImage} alt={usuario.apelidoName} className="foto-conta" />
-            <Link to="/home" className="linkconta">{usuario.apelidoName}</Link>
-          </div>
-        </div>
+        <NavBar/>
 
-        <div className="user-info">
-          <img src={usuario.fotoPerfil} alt={usuario.nome} />
-          <h2>{usuario.nome}</h2>
-        </div>
-
-        {renderCarousel("Minha Playlist", playlist)}
-        {renderCarousel("Séries favoritas", series)}
-        {renderCarousel("Filmes favoritos", filmes)}
+        <Carrossel listadeFilmes={playlist} descricao="Minha playlist"/>
+        <Carrossel listadeFilmes={series} descricao="Minhas séries favoritas"/>
+        <Carrossel listadeFilmes={filmes} descricao="Meus filmes"/>
+       
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import CardFilme from "./CardFilme";
 import "./Carrossel.css";
 
-function Carrossel ({listadeFilmes, descricao}) {
+function Carrossel ({listadeFilmes, descricao, expandido = false}) {
     return(
         <div className="minhaLista">
 
@@ -10,7 +10,7 @@ function Carrossel ({listadeFilmes, descricao}) {
             <div className="carrosel">
                 {
                     listadeFilmes.map((filme, idx) => 
-                        <CardFilme key={idx} filme={filme} />
+                        <CardFilme key={idx} filme={filme} expandido />
                     )
                 }
             </div>     

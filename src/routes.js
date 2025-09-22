@@ -11,7 +11,7 @@ function MainRoutes() {
     return (
         <Routes> 
             <Route path="/" element={<ProfilesPage />} />
-              <Route path="/perfil" element={<PerfilPage />} />
+            <Route path="/perfil" element={<PerfilPage />} />
             
             <Route path="/home" element={<HomePage />} />
             <Route path="/config" element={<ConfigPage />} />
