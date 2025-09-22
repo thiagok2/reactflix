@@ -153,8 +153,8 @@ h3, .subtitulo {
 /* Nome do filme sobreposto */
 .filme-titulo {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  /* bottom: 0;
+  left: 0; */
   width: 100%;
   background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
   color: #fff;
