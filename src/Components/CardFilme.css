@@ -50,13 +50,13 @@
 
 
 .titulo-card-heard {
-  font-weight: 600;
+  font-weight: 500;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
+  font-size: 25px;
   gap: 5px;
+  margin-top: 28px;
 
   border-radius: 50px;
-  background-color: rgba(117, 114, 114, 0.249);
   display: flex;
 
   flex-direction: row;
