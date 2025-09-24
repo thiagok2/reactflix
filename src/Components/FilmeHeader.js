@@ -20,7 +20,7 @@ function FilmeHeader({ filme }) {
 
 
                 <div className='classificacao'>
-                    <span className={filme.faixa_etaria >=16 ? "faixa-etaria-icon-maior":"faixa-etaria-icon"}>
+                    <span className={ "faixa-etaria-icon" + filme.faixa_etaria >=16 ? "icon-red":"icon-green"}>
                         {filme.faixa_etaria}+
                     </span>
 

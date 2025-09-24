@@ -74,23 +74,15 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
+}
 
+.icon-green {
     border-radius: 5px;
     background: green;
     color: white;
 }
 
-.faixa-etaria-icon-maior {
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    font-size: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-
+.icon-red {
     border-radius: 5px;
     background: red;
     color: white;
