@@ -1,76 +1,101 @@
-.comentario-container{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    gap: 20px;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.comentario {
-  position: relative;
-  overflow: hidden;              /* garante que o overlay respeite o radius */
-  border-radius: 20px;
-  width: 250px;
-  height: 250px;
-  padding: 14px;                 /* um pouco mais de espaço p/ não “pegar” no texto */
+.all-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info-avaliacao{
   display: flex;
   flex-direction: column;
-  gap: 10px;
-
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  gap: 20px;
+  text-align: center;
   color: white;
-  background: rgba(240, 248, 255, 0.132);
+  margin-right: 40px;
 }
 
-/* Lado esquerdo */
-.comentario::before,
-.comentario::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 36px;                   /* largura do fade: ajuste aqui */
-  height: 100%;
-  pointer-events: none;          /* não intercepta cliques */
-  border-radius: 20px;           /* segue o radius do card */
-}
-
-.comentario::before {
-  left: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.35),         /* opacidade na borda */
-    rgba(0, 0, 0, 0) 60%         /* desaparece rápido para o miolo */
-  );
-}
-
-/* Lado direito */
-.comentario::after {
-  right: 0;
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.35),
-    rgba(0, 0, 0, 0) 60%
-  );
-}
-
-
-.comentario-header{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-.comentario-texto{
-    color: white;  
-}
-
-.estrelas{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
+.foto-avatar-comentario{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 100%;
 
 }
 
-.estrela{
-    color: rgba(255, 255, 0, 0.896);
+.avaliação-texto{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  font-size: 56px;
 }
+
+.comentario-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: white;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgb(44, 44, 44);
+  
+}
+
+/* Card de comentário */
+.comentario {
+  position: relative;
+  transition: 100ms ease-in-out;
+  border-radius: 10px;
+  width: 250px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  background: rgba(240, 248, 255, 0.08);
+  backdrop-filter: blur(4px); /* dá um efeito de vidro */;
+  cursor: pointer;
+
+}
+
+.comentario:hover{
+  scale: 1.08;
+}
+
+.comentario-header {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.comentario-texto {
+  color: white;
+}
+
+.estrelas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  color: #cfcfcf;
+}
+
+.estrela {
+  color: rgba(255, 255, 0, 0.896);
+}
+
