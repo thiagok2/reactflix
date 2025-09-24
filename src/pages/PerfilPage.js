@@ -34,7 +34,18 @@ import Carrossel from '../Components/Carrossel.js';
 
     return (
       <div className="perfil-page">
+<<<<<<< Updated upstream
         <NavBar/>
+=======
+        <div className='parte-superior'> 
+          <img src={logo} alt="Logo"/>
+          <div className="nav-bar-conta">
+            <img src={usuario.avatarImage} alt={usuario.apelidoName} className="foto-conta" />
+
+           
+          </div>
+        </div>
+>>>>>>> Stashed changes
 
         <Carrossel listadeFilmes={playlist} descricao="Minha playlist"/>
         <Carrossel listadeFilmes={series} descricao="Minhas séries favoritas"/>
