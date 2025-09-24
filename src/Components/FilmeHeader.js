@@ -10,21 +10,24 @@ function FilmeHeader({ filme }) {
 
                 <div className='NomeFilme'>{filme.titulo}</div>
 
-                <div className='Tempo'>Duração: {filme.duracao}</div>
+                <div className='Tempo'>{filme.duracao}</div>
 
-            <div className='caracteristicas'>
+                <div className='caracteristicas'>
+                 <div className='lancamento'>{filme.ano_lancamento}</div>
+                <div className='temporadas'>{filme.temporadas}</div>
+                    <span className='hd-texto'>HD</span>
+                    </div>
+
 
                 <div className='classificacao'>
                     <span className="idade">{filme.faixa_etaria}</span>
+
+                    <div className='sobre'>{filme.genero}</div>
                 </div>
 
-                <div className='lancamento'>{filme.ano_lancamento}</div>
-                <div className='temporadas'>{filme.temporadas}</div>
-              
-            </div>
+             
                
-               
-                <div className='sobre'>Gênero: {filme.genero}</div>
+                
 
                 <div className='descricao'>
                     <div className='texto'>
