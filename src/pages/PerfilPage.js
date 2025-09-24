@@ -36,8 +36,14 @@ import Carrossel from '../Components/Carrossel.js';
       <div className="perfil-page">
 
         <NavBar/>
+        <div className='parte-superior'> 
+          <img src={logo} alt="Logo"/>
+          <div className="nav-bar-conta">
+            <img src={usuario.avatarImage} alt={usuario.apelidoName} className="foto-conta" />
 
-     
+           
+          </div>
+        </div>
 
         <Carrossel listadeFilmes={playlist} descricao="Minha playlist"/>
         <Carrossel listadeFilmes={series} descricao="Minhas séries favoritas"/>
