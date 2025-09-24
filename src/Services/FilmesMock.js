@@ -11,7 +11,7 @@ export const filmes = [
     elenco: ["Millie Bobby Brown", "Finn Wolfhard", "David Harbour"],
     nota_avaliacao: 8.7,
     numero_comentarios: 15230,
-    faixa_etaria:"14+", 
+    faixa_etaria:"14", 
     indicacoes_premios: ["Emmy", "Globo de Ouro"],
     sinopse: "Em uma pequena cidade, um grupo de amigos se envolve em uma série de eventos sobrenaturais quando um garoto desaparece. Eles acabam descobrindo uma misteriosa menina com poderes telecinéticos e revelam experimentos secretos do governo, portais para outras dimensões e monstros aterrorizantes."
   },
@@ -26,7 +26,7 @@ export const filmes = [
     elenco: ["Cillian Murphy", "Paul Anderson", "Helen McCrory"],
     nota_avaliacao: 8.8,
     numero_comentarios: 9745,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: ["BAFTA", "Emmy"],
     sinopse: "Em Birmingham, Inglaterra, logo após a Primeira Guerra Mundial, a série acompanha a ascensão da família criminosa Shelby. Liderados pelo ambicioso e calculista Tommy Shelby, os Peaky Blinders expandem seus negócios ilegais enquanto lidam com gangues rivais, a polícia e seus próprios traumas."
   },
@@ -41,7 +41,7 @@ export const filmes = [
     elenco: ["Gabriel Macht", "Patrick J. Adams", "Meghan Markle"],
     nota_avaliacao: 8.5,
     numero_comentarios: 18400,
-    faixa_etaria: "14+",
+    faixa_etaria: "14",
     indicacoes_premios: [],
     sinopse: "A trama acompanha Harvey Specter, um dos melhores advogados de Nova York, que decide contratar o jovem Mike Ross, um gênio com memória fotográfica, mas que abandonou a faculdade de direito. Juntos, eles formam uma dupla imbatível, enquanto escondem o segredo de que Mike não possui licença para advogar."
   },
@@ -56,7 +56,7 @@ export const filmes = [
     elenco: ["Elliot Page", "Aidan Gallagher", "Robert Sheehan"],
     nota_avaliacao: 7.9,
     numero_comentarios: 9200,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: ["Emmy"],
     sinopse: "Sete crianças extraordinárias, adotadas por um bilionário, se reúnem após a sua morte. Agora adultos e distantes, eles precisam superar suas diferenças para impedir um apocalipse iminente que eles mesmos podem ter causado."
   },
@@ -71,7 +71,7 @@ export const filmes = [
     elenco: ["Ju Ji-hoon", "Bae Doona"],
     nota_avaliacao: 8.3,
     numero_comentarios: 3100,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: [],
     sinopse: "Durante a Dinastia Joseon da Coreia medieval, o príncipe herdeiro Chang investiga uma misteriosa praga que assola o reino. Ele descobre que a doença transforma os mortos em monstros sedentos por carne e precisa lutar para proteger seu povo."
   },
@@ -86,7 +86,7 @@ export const filmes = [
     elenco: ["Omar Sy", "Ludivine Sagnier"],
     nota_avaliacao: 7.8,
     numero_comentarios: 6400,
-    faixa_etaria: "14+",
+    faixa_etaria: "14",
     indicacoes_premios: [],
     sinopse: "Inspirado pelas aventuras de Arsène Lupin, o ladrão de casaca Assane Diop busca vingança pela injustiça cometida contra seu pai por uma família rica. Usando seu carisma e maestria em disfarces, ele executa roubos elaborados."
   },
@@ -104,7 +104,7 @@ export const filmes2 = [
     elenco: ["Lee Jung-jae", "Park Hae-soo"],
     nota_avaliacao: 8.1,
     numero_comentarios: 15000,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: ["Emmy"],
     sinopse: "Um grupo de pessoas com dificuldades financeiras é convidado a participar de uma misteriosa competição de sobrevivência. Eles competem em jogos infantis mortais por um prêmio bilionário, onde quem perde é eliminado."
   },
@@ -119,7 +119,7 @@ export const filmes2 = [
     elenco: ["Álvaro Morte", "Úrsula Corberó"],
     nota_avaliacao: 8.3,
     numero_comentarios: 21000,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: ["Emmy Internacional"],
     sinopse: "Um homem misterioso conhecido como 'O Professor' recruta oito pessoas para realizar o maior assalto da história: roubar a Casa da Moeda da Espanha. Enquanto executam o plano, eles precisam lidar com a polícia e reféns."
   },
@@ -134,7 +134,7 @@ export const filmes2 = [
     elenco: ["David Stakston", "Herman Tømmeraas"],
     nota_avaliacao: 7.5,
     numero_comentarios: 4300,
-    faixa_etaria: "14+",
+    faixa_etaria: "14",
     indicacoes_premios: [],
     sinopse: "Em uma cidade norueguesa afetada pela poluição, um jovem descobre que possui os poderes do deus Thor. Ele precisa confrontar uma família de gigantes disfarçados de empresários que está destruindo a cidade."
   },
@@ -149,7 +149,7 @@ export const filmes2 = [
     elenco: ["Kim Rae-won", "Han Suk-kyu"],
     nota_avaliacao: 7.1,
     numero_comentarios: 1500,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: [],
     sinopse: "Um ex-detetive é enviado para a prisão e descobre que o local é dominado por um prisioneiro que comanda um sindicato do crime de dentro das celas. Para sobreviver, ele precisa se juntar ao grupo e descobrir a verdade."
   },
@@ -164,7 +164,7 @@ export const filmes2 = [
     elenco: ["Wagner Moura", "Pedro Pascal"],
     nota_avaliacao: 8.8,
     numero_comentarios: 12000,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: ["Emmy"],
     sinopse: "A série narra a história real da ascensão e queda do infame traficante colombiano Pablo Escobar e do Cartel de Medellín, contada a partir da perspectiva de Escobar e dos agentes do DEA que lideraram a missão para capturá-lo."
   },
@@ -179,7 +179,7 @@ export const filmes2 = [
     elenco: ["Atriz Fictícia 1", "Ator Fictício 2"],    
     nota_avaliacao: 5.9,
     numero_comentarios: 800,
-    faixa_etaria: "18+",
+    faixa_etaria: "18",
     indicacoes_premios: [],
     sinopse: 'A série "Wandinha" foca na filha da Família Addams em uma escola para jovens com poderes sobrenaturais. Lá, ela tenta controlar suas habilidades psíquicas enquanto investiga uma onda de assassinatos misteriosos na cidade, descobrindo segredos sobre a escola, sua família e uma antiga profecia que a envolve.'
   },
@@ -197,7 +197,7 @@ export const filmesNum = [
     elenco: ["Jonathan Roumie", "Shahar Isaac"],
     nota_avaliacao: 9.3,
     numero_comentarios: 7000,
-    faixa_etaria: "12+",
+    faixa_etaria: "12",
     indicacoes_premios: [],
     sinopse: "A série retrata a vida de Jesus Cristo sob a perspectiva das pessoas que o conheceram e seguiram, explorando suas vidas, lutas e a forma como seus encontros com Jesus os transformaram para sempre."
   },
@@ -212,7 +212,7 @@ export const filmesNum = [
     elenco: ["Omar Sy", "Clotilde Hesme"],
     nota_avaliacao: 7.8,
     numero_comentarios: 6400,
-    faixa_etaria: "14+",
+    faixa_etaria: "14",
     indicacoes_premios: [],
     sinopse: "Inspirado pelas aventuras de Arsène Lupin, o ladrão de casaca Assane Diop busca vingança pela injustiça cometida contra seu pai por uma família rica. Usando seu carisma e maestria em disfarces, ele executa roubos elaborados."
   },
@@ -228,7 +228,7 @@ export const filmesNum = [
     elenco: ["Millie Bobby Brown", "Finn Wolfhard"],
     nota_avaliacao: 8.7,
     numero_comentarios: 15230,
-    faixa_etaria: "14+",
+    faixa_etaria: "14",
     indicacoes_premios: ["Emmy"],
     sinopse: "Em uma pequena cidade, um grupo de amigos se envolve em uma série de eventos sobrenaturais quando um garoto desaparece. Eles acabam descobrindo uma misteriosa menina com poderes telecinéticos e revelam experimentos secretos do governo."
   },
@@ -243,7 +243,7 @@ export const filmesNum = [
     temporadas: "4 temporadas",
     nota_avaliacao: 8.2,
     numero_comentarios: 5400,
-    faixa_etaria: "12+",
+    faixa_etaria: "12",
     indicacoes_premios: ["Emmy"],
     sinopse: "Após sua morte, Eleanor Shellstrop é enviada por engano para o 'Lugar Bom'. Percebendo que não pertence àquele lugar, ela busca a ajuda de sua alma gêmea para aprender a ser uma pessoa melhor e garantir sua permanência."
   },
@@ -258,7 +258,7 @@ export const filmesNum = [
     elenco: ["Ralph Macchio", "William Zabka"],
     nota_avaliacao: 8.6,
     numero_comentarios: 8600,
-    faixa_etaria: "14+",
+    faixa_etaria: "14",
     indicacoes_premios: [],
     sinopse: "Décadas após o torneio de karatê de 1984, Johnny Lawrence reabre o dojo Cobra Kai. Isso reacende sua rivalidade com Daniel LaRusso, e a vida dos dois e de uma nova geração de lutadores se entrelaçam."
   },
@@ -273,7 +273,7 @@ export const filmesNum = [
     temporadas: "8 temporadas",
     nota_avaliacao: 7.5,
     numero_comentarios: 9100,
-    faixa_etaria: "14+",
+    faixa_etaria: "14",
     indicacoes_premios: [],
     sinopse: "Após ser dado como morto por cinco anos, o bilionário Oliver Queen retorna à sua cidade com uma nova missão: combater o crime como um vigilante encapuzado, usando suas habilidades com arco e flecha para caçar os corruptos."
   },
@@ -288,7 +288,7 @@ export const filmesNum = [
     temporadas: "8 episódios",
     nota_avaliacao: 7.3,
     numero_comentarios: 3200,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: [],
     sinopse: "Em 1947, a série explora a origem de Mildred Ratched, a icônica enfermeira do filme 'Um Estranho no Ninho', mostrando sua jornada de uma simples enfermeira a uma figura manipuladora e monstruosa dentro de um hospital psiquiátrico."
   },
@@ -303,7 +303,7 @@ export const filmesNum = [
     temporadas: "3 temporadas",
     nota_avaliacao: 8.2,
     numero_comentarios: 14500,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: ["Emmy"],
     sinopse: "Geralt de Rívia, um caçador de monstros solitário, luta para encontrar seu lugar em um mundo onde as pessoas frequentemente se mostram mais perversas do que as bestas. Seu destino se entrelaça com o de uma jovem princesa e uma feiticeira."
   },
@@ -318,7 +318,7 @@ export const filmesNum = [
     duracao: "2h 6min",
     nota_avaliacao: 7.2,
     numero_comentarios: 2100,
-    faixa_etaria: "16+",
+    faixa_etaria: "16",
     indicacoes_premios: [],
     sinopse: "Um exímio atirador de elite da marinha é convencido a voltar à ativa para impedir um atentado. No entanto, ele é traído e se torna o principal suspeito, precisando usar todas as suas habilidades para caçar os verdadeiros culpados."
   },

@@ -11,31 +11,52 @@
     margin-bottom: -80px;
 }
 
+.carrosel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .carroselNum {
-    display: flex;
-    flex-direction: row;
-    gap: 38px;
-    margin-left: 30px;
-    width: max-content; /* necessário para scroll animado */
-    position: relative;
-    align-items: center;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    cursor: grab;
-
-    /* Animação automática */
-    animation: scrollCarrossel 30s linear infinite;
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  margin-left: 30px;
+  overflow-x: auto; /* permite rolagem */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
 }
 
-@keyframes scrollCarrossel {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-25%); /* ajuste conforme conteúdo total */
-    }
+.carroselNum::-webkit-scrollbar {
+  display: none; /* Chrome */
 }
 
+.btn-scroll {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 5;
+  transition: background 0.3s;
+}
+
+.btn-scroll:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-scroll.left {
+  left: 0;
+}
+
+.btn-scroll.right {
+  right: 0;
+}
 .fotoNum {
     display: flex;
     width: 320px;
@@ -58,6 +79,19 @@
     transition: all 0.3s ease;
 }
 
+
+/* .conjuntoNum {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.numero {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+} */
+
 .conjuntoNum {
     display: flex;
     flex-direction: row;
@@ -66,13 +100,13 @@
 }
 
 .numero {
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
     font-size: 320px;
     -webkit-text-fill-color: rgb(0, 0, 0);
     -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: #4d4d4d;
-    margin-right: -30px;
+    margin-right: -39px;
 }
 
 .link-num {
