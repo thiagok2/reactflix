@@ -1,0 +1,43 @@
+.comentarios-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.comentario-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.comentario-nome {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comentario-texto {
+    margin-bottom: 8px;
+}
+
+.comentario-footer {
+    display: flex;
+    align-items: center;
+}
+
+.curtir-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.curtir-btn svg {
+    margin-right: 5px;
+}

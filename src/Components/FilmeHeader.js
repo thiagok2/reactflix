@@ -19,7 +19,7 @@ function FilmeHeader({ filme }) {
                     </div>
 
                     <div className='card-menu'>
-                        <Link className='cor-visao'>
+                        <Link className='cor-visao' to={'/comentario'}>
                             COMENTÁRIOS
                         </Link>
                         <Link className='cor-visao' to={'/catalogo'}> 
