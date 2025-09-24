@@ -22,13 +22,11 @@ function ComentariosContainer({ filme }) {
             <span className="comentario-data">{comentario.data_comentario}</span>
 
             <div className='estrelas'>
-              {
-                Array.from({ length: comentario.avaliacao }).map((_, i) => (
-                  <FaStar key={i} className='estrela' />
-                ))
-              }
+              
+                  <FaStar className='estrela' />
+                
 
-              <span>{comentario.avaliacao}</span>
+              <span>{comentario.avaliacao}/10</span>
             </div>
 
           </div>
