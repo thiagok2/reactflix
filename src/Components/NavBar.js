@@ -47,7 +47,7 @@ function NavBar() {
                 <Link to="/perfil">
                   <img src={usuario?.avatarImage} className="foto-conta"></img>
                 </Link>
-                <Link to="/config" className="linkconta">
+                <Link to="/perfil" className="linkconta">
                     <span >{usuario?.apelidoName}</span>
                 </Link>
 
