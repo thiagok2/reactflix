@@ -24,8 +24,10 @@
     transition:  color 200ms ease;
     color: aliceblue;
     text-decoration: none;
-    font-size: 25px;
-
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagem{
