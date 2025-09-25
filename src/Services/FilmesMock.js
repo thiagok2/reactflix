@@ -82,39 +82,9 @@ export const filmes = [
   indicacoes_premios: ["Critics' Choice Awards", "Art Directors Guild Awards"],
   sinopse: "Auggie Pullman nasceu com uma síndrome genética que causou deformidades faciais e passou por diversas cirurgias. Pela primeira vez frequentando a escola regular, ele precisa lidar com o preconceito e aprender o valor da amizade, da empatia e da aceitação."
 },
-  {
-    id: 6,
-    titulo: "Lupin",
-    tipo: "s",
-    fotoThumbnail: 'public/Imagens/Lupin-NI.jpg',
-    ano_lancamento: 2021,
-    genero: "Suspense, Crime",
-    elenco: ["Omar Sy", "Ludivine Sagnier"],
-    duracao: "50min",
-    nota_avaliacao: 7.8,
-    numero_comentarios: 6400,
-    faixa_etaria: "14+",
-    indicacoes_premios: [],
-    sinopse: "Inspirado pelas aventuras de Arsène Lupin, o ladrão de casaca Assane Diop busca vingança pela injustiça cometida contra seu pai por uma família rica. Usando seu carisma e maestria em disfarces, ele executa roubos elaborados."
-  },
 ];
 
 export const filmes2 = [
-  {
-    id: 7,
-    titulo: "Round 6",
-    tipo: "s",
-    fotoThumbnail: "../Imagens/Round-6-NI.jpg",
-    ano_lancamento: 2021,
-    genero: "Drama, Suspense",
-    elenco: ["Lee Jung-jae", "Park Hae-soo"],
-    duracao: "55min",
-    nota_avaliacao: 8.1,
-    numero_comentarios: 15000,
-    faixa_etaria: "16+",
-    indicacoes_premios: ["Emmy"],
-    sinopse: "Um grupo de pessoas com dificuldades financeiras é convidado a participar de uma misteriosa competição de sobrevivência. Eles competem em jogos infantis mortais por um prêmio bilionário, onde quem perde é eliminado."
-  },
   {
     id: 8,
     titulo: "La Casa de Papel",
@@ -131,22 +101,7 @@ export const filmes2 = [
     sinopse: "Um homem misterioso conhecido como 'O Professor' recruta oito pessoas para realizar o maior assalto da história: roubar a Casa da Moeda da Espanha. Enquanto executam o plano, eles precisam lidar com a polícia e reféns."
   },
   {
-    id: 9,
-    titulo: "Ragnarok",
-    fotoThumbnail: "../Imagens/Ragnarok-NI.jpg",
-    tipo: "s",
-    ano_lancamento: 2020,
-    genero: "Fantasia, Drama",
-    elenco: ["David Stakston", "Herman Tømmeraas"],
-    duracao: "45min",
-    nota_avaliacao: 7.5,
-    numero_comentarios: 4300,
-    faixa_etaria: "14+",
-    indicacoes_premios: [],
-    sinopse: "Em uma cidade norueguesa afetada pela poluição, um jovem descobre que possui os poderes do deus Thor. Ele precisa confrontar uma família de gigantes disfarçados de empresários que está destruindo a cidade."
-  },
-  {
-    id: 11,
+    id: 10,
     titulo: "Narcos",
     fotoThumbnail: "../Imagens/Narcos-NI.jpg",
     tipo: "s",
@@ -163,66 +118,6 @@ export const filmes2 = [
 ];
 
 export const filmesNum = [
-  {
-    id: 13,
-    titulo: "The Chosen",
-    tipo: "s",
-    fotoThumbnail: "../Imagens/The-Chosen-NI.jpg",
-    ano_lancamento: 2017,
-    genero: "Drama Religioso",
-    elenco: ["Jonathan Roumie", "Shahar Isaac"],
-    duracao: "50min",
-    nota_avaliacao: 9.3,
-    numero_comentarios: 7000,
-    faixa_etaria: "12+",
-    indicacoes_premios: [],
-    sinopse: "A série retrata a vida de Jesus Cristo sob a perspectiva das pessoas que o conheceram e seguiram, explorando suas vidas, lutas e a forma como seus encontros com Jesus os transformaram para sempre."
-  },
-  {
-    id: 14,
-    titulo: "Lupin",
-    tipo: "s",
-    fotoThumbnail: "../Imagens/Lupin-NI.jpg",
-    ano_lancamento: 2021,
-    genero: "Suspense, Crime",
-    elenco: ["Omar Sy", "Clotilde Hesme"],
-    duracao: "50min",
-    nota_avaliacao: 7.8,
-    numero_comentarios: 6400,
-    faixa_etaria: "14+",
-    indicacoes_premios: [],
-    sinopse: "Inspirado pelas aventuras de Arsène Lupin, o ladrão de casaca Assane Diop busca vingança pela injustiça cometida contra seu pai por uma família rica. Usando seu carisma e maestria em disfarces, ele executa roubos elaborados."
-  },
-  {
-    id: 15,
-    titulo: "Stranger Things",
-    tipo: "s",
-    fotoThumbnail: "../Imagens/stVertical.jpeg",
-    ano_lancamento: 2016,
-    genero: "Ficção Científica, Terror",
-    elenco: ["Millie Bobby Brown", "Finn Wolfhard"],
-    duracao: "50min",
-    nota_avaliacao: 8.7,
-    numero_comentarios: 15230,
-    faixa_etaria: "14+",
-    indicacoes_premios: ["Emmy"],
-    sinopse: "Em uma pequena cidade, um grupo de amigos se envolve em uma série de eventos sobrenaturais quando um garoto desaparece. Eles acabam descobrindo uma misteriosa menina com poderes telecinéticos e revelam experimentos secretos do governo."
-  },
-  {
-    id: 16,
-    titulo: "The Good Place",
-    fotoThumbnail: "../Imagens/The-Good-Place-NI.webp",
-    tipo: "s",
-    ano_lancamento: 2016,
-    genero: "Comédia, Fantasia",
-    elenco: ["Kristen Bell", "Ted Danson"],
-    duracao: "22min",
-    nota_avaliacao: 8.2,
-    numero_comentarios: 5400,
-    faixa_etaria: "12+",
-    indicacoes_premios: ["Emmy"],
-    sinopse: "Após sua morte, Eleanor Shellstrop é enviada por engano para o 'Lugar Bom'. Percebendo que não pertence àquele lugar, ela busca a ajuda de sua alma gêmea para aprender a ser uma pessoa melhor e garantir sua permanência."
-  },
   {
     id: 17,
     titulo: "Cobra Kai",

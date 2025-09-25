@@ -20,26 +20,26 @@ function NavBar() {
 
             <div className="nav-bar-link">
                 <Link to="/"  className="link">
-                    <img src={logo} className="imagem"></img>
+                    <img src="/Imagens/Filmes-educacionais/Logo-Ifal.png" className="imagem" alt="Logo" />
                 </Link>                
 
                 <Link to="/home"  className="link"  >
-                    <span>Início</span>
+                    <span className="navbar-nome">Início</span>
                 </Link>
 
                 <Link to="/catalogo/series" className="link">
-                    <span >Séries</span>
+                    <span className="navbar-nome">Séries</span>
                 </Link>
 
                 <Link to="/catalogo/filmes" className="link">
-                    <span >Filmes</span>
+                    <span className="navbar-nome">Filmes</span>
                 </Link>
 
                 <Link to="/catalogo/bombando" className="link">
-                    <span >Bombando</span>
+                    <span className="navbar-nome">Bombando</span>
                 </Link>
                 <Link to="/catalogo/minhalista" className="link">
-                    <span >Minha lista</span>
+                    <span className="navbar-nome">Minha lista</span>
                 </Link>
             </div>
 
