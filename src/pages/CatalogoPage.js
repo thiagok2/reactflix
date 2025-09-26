@@ -31,7 +31,6 @@ function CatalogoPage() {
                         <Link key={idx} className='container-filme' onClick={() => handleAddClicados(filme)}>
                             <div className='header-filme'>
                                 <span className='filme-titulo'>{filme.titulo}</span>
-                                <span className="filme-comentarios"> <FaComments /> {filme.numero_comentarios}</span>
                             </div>
 
                             <div className='img-container'>
@@ -41,7 +40,6 @@ function CatalogoPage() {
                             </div>
 
                             <div className='filme-subtitulo'>
-                                <div className='subitem-header'>{filme.nota_avaliacao} <FaStar className='star'/></div>
 
 
                                 <div className='subitem-header faixa'>{filme.faixa_etaria}</div>

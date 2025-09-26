@@ -87,7 +87,7 @@ h3, .subtitulo {
   display: flex;
   overflow-x: auto;
   gap: 15px;
-  padding: 10px 0;
+  padding: 14px 0;
   scroll-behavior: smooth;
   cursor: grab;
 }
@@ -111,6 +111,7 @@ h3, .subtitulo {
 
 /* Card do filme */
 .filme-card {
+  gap: 20px;
   width: 220px;           
   height: 330px;          
   border-radius: 10px;

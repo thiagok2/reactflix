@@ -1,20 +1,31 @@
 .container-filme {
     display: flex;
     flex-direction: column;
-    border: solid 2px rgb(0, 0, 0);
-    background-color: rgba(55, 55, 55, 0.559);
-    border-radius: 10px;
     width: 400px;
-    
-    transition: transform 0.3s ease;
-     /* border: solid 2px rgb(107, 255, 1); */
-     margin: 20px;
-     
-     text-decoration: none;
-     opacity: 0.9;
-     color: aliceblue;
+    margin: 20px;
 
+    background: rgba(40, 40, 40, 0.8); /* fundo mais escuro e elegante */
+    backdrop-filter: blur(6px); /* efeito de vidro fosco */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    color: aliceblue;
+    text-decoration: none;
+    opacity: 0.95;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* sombra suave */
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
+
+.container-filme:hover {
+    transform: translateY(-6px) scale(1.02);
+    opacity: 1;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
 .header-filme {
     display: flex;
     flex-direction: row;
@@ -23,20 +34,26 @@
       margin: 10px;
     
 }
-.filme-titulo{
-    display: flex;
-    flex-direction: row;
-    color: aliceblue;
-    margin-left: 22px;
-    font-size: 25px;
+.filme-titulo {
+    margin-top: 12px;        /* só um espacinho abaixo da imagem */
+    text-align: start;      /* centraliza o texto */
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: none;
+    background-color: transparent;
 }
+
+
+
+
 .filme-comentarios{
 text-decoration: none;
 color: aliceblue;
 font-size: 20px;
 }
+
 .filme-subtitulo{
     display: flex;
     flex-direction: row;
@@ -44,7 +61,7 @@ font-size: 20px;
     margin-right: 20px;
     margin-left: 20px;
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 20px;
     align-items: center;
 
 }
@@ -56,9 +73,7 @@ font-size: 20px;
     
     justify-content: end;
 }
-.star{
-    color: yellow;
-}
+
 .faixa{
     /* border: solid 2px red; */
     border-radius: 5px;
@@ -117,7 +132,7 @@ font-size: 20px;
 .foto {
     display: flex;
     flex-direction: column;
-
+    margin-top: 20px;
     width: 370px;
     height: 200px;
     object-fit: cover;

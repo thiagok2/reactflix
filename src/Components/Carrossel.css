@@ -7,7 +7,7 @@
     font-weight: 300;
     font-size: 20px;
     margin-left: 45px;
-    padding: 20px;
+    padding: 12px;
     gap:10px;
     font-weight: 500;
     margin-bottom: -80px;
@@ -20,7 +20,7 @@
     position: relative;
     overflow-x: auto;
     overflow-y: hidden;
-     padding: 1rem 0;
+    padding: 2rem 0;
     scroll-behavior: smooth;
     overflow-clip-margin: content-box;
     cursor: grab;
