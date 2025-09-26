@@ -80,9 +80,16 @@ export const filmes = [
   },
   {
     id: 6,
+<<<<<<< Updated upstream
     titulo: "Lupin",
     tipo: "s",
     fotoThumbnail: 'public/Imagens/Lupin-NI.jpg',
+=======
+    titulo: " Lupin",
+    tipo: "s",
+     temporadas: "3 temporadas",
+    fotoThumbnail: 'public/Imagens/lupin.png',
+>>>>>>> Stashed changes
     ano_lancamento: 2021,
     genero: "Suspense, Crime",
     elenco: ["Omar Sy", "Ludivine Sagnier"],
@@ -208,7 +215,12 @@ export const filmesNum = [
     id: 14,
     titulo: "Lupin",
     tipo: "s",
+<<<<<<< Updated upstream
     fotoThumbnail: "../Imagens/Lupin-NI.jpg",
+=======
+   temporadas: "3 temporadas",
+    fotoThumbnail: "../Imagens/Lupin.png",
+>>>>>>> Stashed changes
     ano_lancamento: 2021,
     genero: "Suspense, Crime",
     elenco: ["Omar Sy", "Clotilde Hesme"],
