@@ -16,7 +16,7 @@ Ex.:
     duracao: "50min",
     nota_avaliacao: 8.7,
     numero_comentarios: 15230,
-    faixa_etaria:"14+", 
+    faixa_etaria:"14", 
     indicacoes_premios: ["Emmy", "Globo de Ouro"],
     sinopse: "Em uma pequena cidade, um grupo de amigos se envolve em uma série de eventos sobrenaturais quando um garoto desaparece. Eles acabam descobrindo uma misteriosa menina com poderes telecinéticos e revelam experimentos secretos do governo, portais para outras dimensões e monstros aterrorizantes."
   },
