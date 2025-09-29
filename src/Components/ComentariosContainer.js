@@ -2,7 +2,7 @@ import ComentariosService from '../Services/ComentariosService';
 import './ComentariosContainer.css'
 import { FaStar } from "react-icons/fa";
 import { useState, useEffect } from 'react';
-
+//coment
 function ComentariosContainer({ filme }) {
 
   const comentarios = ComentariosService.getByFilmeId(filme.id);
