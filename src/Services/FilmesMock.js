@@ -206,7 +206,7 @@ export const filmesNum = [
     titulo: "Lupin",
     tipo: "s",
    temporadas: "3 temporadas",
-    fotoThumbnail: "../Imagens/Lupin-NI.jpg",
+    fotoThumbnail: "../Imagens/Lupin.png",
     ano_lancamento: 2021,
     genero: "Suspense, Crime",
     elenco: ["Omar Sy", "Clotilde Hesme"],
