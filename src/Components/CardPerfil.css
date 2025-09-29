@@ -1,3 +1,9 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+}
 .Perfil{
     display: flex;
     flex-direction: column;
@@ -26,4 +32,15 @@
 .NomePerfil{
     color: white;
     font-size: 25px;
+}
+
+.card-footer{
+display: flex;
+flex-direction: row;
+
+}
+
+.genero{
+    color: gray;
+    font-size: 20px;
 }

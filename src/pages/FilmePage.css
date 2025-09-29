@@ -39,6 +39,7 @@
 .container-comentarios {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     padding: 20px;
     padding-left: 50px;
     gap: 20px;

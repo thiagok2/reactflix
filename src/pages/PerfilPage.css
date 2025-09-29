@@ -185,3 +185,14 @@ h3, .subtitulo {
     padding: 8px;
   }
 }
+
+.card-carrosel{
+  font-size: 50px;
+}
+
+.titulo-carrossel {
+  font-size: 40px;   
+  font-weight: bold;
+  margin: 20px 0 15px;
+}
+
