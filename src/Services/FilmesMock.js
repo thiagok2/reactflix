@@ -336,7 +336,7 @@ export const filmesNum = [
     duracao: "1h 38min",
     nota_avaliacao: 8.1,
     numero_comentarios: 12000,
-    faixa_etaria: "Livre",
+    faixa_etaria: "L",
     indicacoes_premios: ["Oscar"],
     sinopse: "Na ilha de Berk, lutar contra dragões é um estilo de vida. Soluço, um jovem viking, muda tudo quando faz amizade com um temido dragão da espécie Fúria da Noite, provando que humanos e dragões podem conviver em paz."
   },

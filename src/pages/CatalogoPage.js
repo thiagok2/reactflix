@@ -47,7 +47,7 @@ function CatalogoPage() {
                                 <div className='subitem-header faixa'>{filme.faixa_etaria}</div>
                             </div>
                             {filme.temporadas &&
-                                <div className='item-opcional'>{filme.temporadas} temporadas</div>
+                                <div className='item-opcional'>{filme.temporadas}</div>
                             }
                             <div className='introducao'>
                                 {filme.sinopse}
