@@ -40,16 +40,31 @@
 }
 
 .comentario-container {
-  
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  color: white;
+  flex-direction: column;
   gap: 15px;
-  padding: 20px;
-  border-radius: 12px;
-  background-color: rgb(44, 44, 44);
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 0;
+  padding: 50px 10px;
   
+  scroll-behavior: smooth;
+  overflow-clip-margin: content-box;
+  cursor: grab;
+  
+}
+
+.lista-comentarios{
+  display: flex;
+  flex-direction: row;
+  gap:14px
+
+}
+
+.avalicao{
+  font-size: 20px;
 }
 
 /* Card de comentário */

@@ -79,4 +79,5 @@ export const comentarios = [
     avaliacao: 8,
     avatar_foto: "../Avatares/homi4.png",
   },
+  
 ];
