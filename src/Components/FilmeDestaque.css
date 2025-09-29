@@ -91,20 +91,6 @@
     
 }
 
-/* CORRIGIDO: O seletor agora corresponde à classe do botão 
-.mais-informacoes:hover {
-    background-color: #ffffff10;
-}
-*/
-
-.infos {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 10px;
-    padding: 10px;
-    font-size: 40px;
-}
 
 .logoNet {
     display: flex;
@@ -146,12 +132,29 @@
     padding: 24px;
     border-radius: 12px;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /*profundidade*/ 
-    backdrop-filter: blur(2px); /* efeito vidro */ 
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(2px); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
 .filme-card:hover{
     transform: translateY(-4px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.filme-img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1f1f1f;
+}
+
+.filme-img-wrapper img {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  display: block;
 }

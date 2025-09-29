@@ -5,11 +5,8 @@
     background-color: rgb(24, 23, 23);
     border-radius: 10px;
     width: 400px;
-    
     transition: transform 0.3s ease;
-     /* border: solid 2px rgb(107, 255, 1); */
      margin: 20px;
-     
      text-decoration: none;
      opacity: 0.9;
      color: aliceblue;
@@ -63,27 +60,21 @@ font-size: 20px;
     color: rgb(235, 30, 30);
 }
 .faixa{
-    /* border: solid 2px red; */
     border-radius: 5px;
     background-color: rgba(54, 51, 51, 0.824);
     margin: 5px;
-    
 }
 
 .container {
     display: flex;
     flex-direction: wrap;
-     /* border: solid 2px red; */
      height: 100%;
      width: 100%;
-     gap: 15px;
-     
-    
+     gap: 15px; 
 }
 .containers-catalogo{
     padding: 50px ;
     padding-left: 20px;
-    
     display: flex;
     flex-wrap: wrap;
     color: aliceblue;
@@ -97,22 +88,18 @@ font-size: 20px;
     display: flex;
     flex-direction: column;
     margin-left: 15px;  
-
     width: 350px;
     height: 200px;
     border-radius: 20px;
     object-fit: cover;
-    
 }
 
 
 .container-filme:hover{
-    /*transform: scale(1.01);*/
     opacity: 1;
     cursor: pointer;
     border-radius: 15px;
-    color: aliceblue;
-     
+    color: aliceblue;   
 }
 
 
@@ -120,7 +107,6 @@ font-size: 20px;
 .foto {
     display: flex;
     flex-direction: column;
-
     width: 370px;
     height: 200px;
     object-fit: cover;
@@ -133,9 +119,7 @@ font-size: 20px;
     font-size: 20px;
     line-height: 1.4;
     flex-grow: 1;
-    font-family: 'Times New Roman', Times, serif;
-    /* border: solid 2px red; */
-    
+    font-family: 'Times New Roman', Times, serif;    
 }
 
 .footer-filme {
@@ -143,7 +127,6 @@ font-size: 20px;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-
     padding: 10px 15px;
     color: rgb(255, 255, 255);
     font-size: 15px;

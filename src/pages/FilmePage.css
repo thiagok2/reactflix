@@ -1,8 +1,6 @@
 
-.Filmel {
-    position: fixed;
-
-    
+.Filme {
+    position: fixed; 
 }
 
 .PaidetodosFilme {
@@ -11,7 +9,6 @@
     margin-top: 55px;
     gap: 5px;
     padding: 20px;
-       /* border: solid 2px red; */
 }
 
 .divFilmeBanner {

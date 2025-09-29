@@ -59,16 +59,19 @@
     cursor: pointer;
     transition:  color 200ms ease;
     font-size: 25px;
-    
 }
 
 .linkconta{
-
-    
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
     color: white;
     text-decoration: none;
     font-size: 25px;
+}
 
+.linkconta:hover {
+  color: #e50914;
 }
 
 .conta:hover{
@@ -77,6 +80,9 @@
 }
 
 .foto-conta {
-    width: 40px;
-    height: 40px;
+  width: 50px;
+  height: 50px;
+}
+.foto-conta:hover {
+  transform: scale(1.1);
 }

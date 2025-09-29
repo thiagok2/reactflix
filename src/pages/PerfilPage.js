@@ -40,8 +40,6 @@ export default function PerfilPage() {
         <Carrossel listadeFilmes={series} descricao="Minhas séries favoritas" expandido={true}/>
         <Carrossel listadeFilmes={filmes} descricao="Meus filmes"  expandido={true}/>
       </div>
-     
-
     </div>
   );
 }
