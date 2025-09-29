@@ -1,54 +1,47 @@
-  import React, { useEffect, useState } from 'react';
-  import { getPlaylistByAccount, accountsMock } from '../Services/AccountMock.js';
-  import { Link } from 'react-router-dom';
-  import logo from '../Imagens/netflix.png';
-  import './PerfilPage.css';
+import React, { useEffect, useState } from 'react';
+import PlaylistService from '../Services/PlaylistService.js';
+import { accountsMock } from '../Services/AccountMock.js';
+import { Link } from 'react-router-dom';
+import logo from '../Imagens/netflix.png';
+import './PerfilPage.css';
 import NavBar from '../Components/NavBar.js';
 import Carrossel from '../Components/Carrossel.js';
 
-  export default function PerfilPage() {
-    
-    const [usuario, setUsuario] = useState(null);
-    const [playlist, setPlaylist] = useState([]);
-    const [series, setSeries] = useState([]);
-    const [filmes, setFilmes] = useState([]);
-    const [loading, setLoading] = useState(true);
+export default function PerfilPage() {
+  const [usuario, setUsuario] = useState(null);
+  const [playlist, setPlaylist] = useState([]);
+  const [series, setSeries] = useState([]);
+  const [filmes, setFilmes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
-      if (usuarioLogado) {
-        setUsuario(usuarioLogado);
-        const account = accountsMock.find(acc => acc.usuarioId === usuarioLogado.id);
-        if (account) {
-          setPlaylist(getPlaylistByAccount(account.id));
-          setSeries(getPlaylistByAccount(account.id, "series"));
-          setFilmes(getPlaylistByAccount(account.id, "filmes"));
-        }
+  useEffect(() => {
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+    if (usuarioLogado) {
+      setUsuario(usuarioLogado);
+      const account = accountsMock.find(acc => acc.usuarioId === usuarioLogado.id);
+      if (account) {
+        setPlaylist(PlaylistService.getPlaylistByAccount(account.id));
+        setSeries(PlaylistService.getPlaylistByAccount(account.id, "series"));
+        setFilmes(PlaylistService.getPlaylistByAccount(account.id, "filmes"));
       }
-      setLoading(false);
-    }, []);
+    }
+    setLoading(false);
+  }, []);
 
-    if (!usuario) return <p>Carregando usuário...</p>;
+  if (!usuario) return <p>Carregando usuário...</p>;
 
+  return (
+    <div className="perfil-page">
+      <NavBar/>
     
-
-    return (
-      <div className="perfil-page">
-
-        <NavBar/>
-        <div className='parte-superior'> 
-          <img src={logo} alt="Logo"/>
-          <div className="nav-bar-conta">
-            <img src={usuario.avatarImage} alt={usuario.apelidoName} className="foto-conta" />
-
-           
-          </div>
-        </div>
-
-        <Carrossel listadeFilmes={playlist} descricao="Minha playlist"/>
-        <Carrossel listadeFilmes={series} descricao="Minhas séries favoritas"/>
-        <Carrossel listadeFilmes={filmes} descricao="Meus filmes"/>
-       
+      
+      <div className='card-carrosel'>
+        <Carrossel listadeFilmes={playlist} descricao="Minha playlist" expandido={true}/>
+        <Carrossel listadeFilmes={series} descricao="Minhas séries favoritas" expandido={true}/>
+        <Carrossel listadeFilmes={filmes} descricao="Meus filmes"  expandido={true}/>
       </div>
-    );
-  }
+     
+
+    </div>
+  );
+}
