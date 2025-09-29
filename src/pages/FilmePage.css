@@ -1,14 +1,10 @@
-
-.Filme {
-    position: fixed; 
-}
-
 .PaidetodosFilme {
     display: flex;
     flex-direction: row;
     margin-top: 55px;
     gap: 5px;
     padding: 20px;
+    
 }
 
 .divFilmeBanner {
@@ -30,7 +26,6 @@
     color: white;
     background: none;
     padding-left: 10px;
-
 }
 
 .container-comentarios {
