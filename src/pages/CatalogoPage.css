@@ -104,7 +104,7 @@ font-size: 20px;
 
 
 .container-filme:hover{
-    transform: scale(1.01);
+    /*transform: scale(1.01);*/
     opacity: 1;
     cursor: pointer;
     border-radius: 15px;

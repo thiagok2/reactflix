@@ -28,7 +28,6 @@ function ComentariosContainer({ filme }) {
       </div>
 
       <div className="comentario-container">
-
           <strong className='avalicao'>Avaliações</strong>
 
           <div className='lista-comentarios'>
@@ -42,6 +41,7 @@ function ComentariosContainer({ filme }) {
               </div>
 
               <p className="comentario-texto">{comentario.texto}</p>
+
 
               <div className='estrelas'>
                 <span> <FaStar className='estrela' /> {comentario.avaliacao}/10</span>

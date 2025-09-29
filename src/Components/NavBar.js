@@ -44,8 +44,10 @@ function NavBar() {
             </div>
 
             <div className="nav-bar-conta">
-                <img src={usuario?.avatarImage} className="foto-conta"></img>
-                <Link to="/config" className="linkconta">
+                <Link to="/perfil">
+                  <img src={usuario?.avatarImage} className="foto-conta"></img>
+                </Link>
+                <Link to="/perfil" className="linkconta">
                     <span >{usuario?.apelidoName}</span>
                 </Link>
 
