@@ -57,7 +57,7 @@ function CatalogoPage() {
                                 <div className='footer-item'> {filme.genero}</div>
                                 <div className='footer-item'>Lançamento: {filme.ano_lancamento}</div>
                                 {filme.indicacoes_premios?.length > 0 &&
-                                    <div className='footer-item'>Indicações: {filme.indicacoes_premios}</div>
+                                <div className='footer-item'>Indicações: {filme.indicacoes_premios}</div>
                                 }
                             </div>
                         </Link>

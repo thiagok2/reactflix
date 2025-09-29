@@ -21,7 +21,7 @@ function HomePage(){
     return(
         <div className="tela" style={{ backgroundImage: `url(${filmeTopo.fotoThumbnail})` }}>
             
-            <div className="casa">
+            <div>
                 <NaveBar />
                 <FilmeDestaque filme={filmeTopo}/>
 

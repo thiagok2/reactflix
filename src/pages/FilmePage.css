@@ -1,17 +1,10 @@
-
-.Filmel {
-    position: fixed;
-
-    
-}
-
 .PaidetodosFilme {
     display: flex;
     flex-direction: row;
     margin-top: 55px;
     gap: 5px;
     padding: 20px;
-       /* border: solid 2px red; */
+    
 }
 
 .divFilmeBanner {
@@ -33,7 +26,6 @@
     color: white;
     background: none;
     padding-left: 10px;
-
 }
 
 .container-comentarios {

@@ -80,18 +80,6 @@
 }
 
 
-/* .conjuntoNum {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.numero {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-} */
-
 .conjuntoNum {
     display: flex;
     flex-direction: row;
