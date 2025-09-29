@@ -15,11 +15,29 @@ function CardFilme({ filme, expandido = false }) {
     }
 
     return (
+    
+    <div className="card-container">
+
+    
+        <>
         <Link className="card" to={`/filme/${filme.id}`} onClick={handleAddClicado}
             style={{ backgroundImage: `url(${filme.fotoThumbnail})` }}>
             <div className="card-heard">{filme.faixa_etaria}</div>
-            <div className="titulo-card-heard">{filme.titulo} <div className="nota-card-heard"><IoMdStar />{filme.nota_avaliacao} </div></div>
+            <div className="titulo-card-heard">{filme.titulo} 
+                <div className="nota-card-heard">
+                    <IoMdStar />{filme.nota_avaliacao} 
+                </div>
+            </div>
         </Link>
+        {expandido && <div className="card-footer">
+                 <span className="genero">Gênero: {filme.genero}</span>
+            
+            </div>  
+        }
+        
+        </>
+
+    </div>
     );
 }
 
