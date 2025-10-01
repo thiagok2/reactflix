@@ -27,7 +27,7 @@ function HomePage(){
 
                 <div className="todosFilme">
                     <Carrossel listadeFilmes={filmes} descricao="Filmes novos"/>
-                    <Carrossel listadeFilmes={series} descricao="Novidades nas séries" pExpandido={true}/>
+                    <Carrossel listadeFilmes={series} descricao="Novidades nas séries" expandido={true}/>
                     
                     {
                       clicados?.length && <Carrossel listadeFilmes={clicados} descricao="Filmes do seu interesse"/>

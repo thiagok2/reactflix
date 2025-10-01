@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import PlaylistService from '../Services/PlaylistService.js';
 import { accountsMock } from '../Services/AccountMock.js';
 import { Link } from 'react-router-dom';
-import logo from '../Imagens/netflix.png';
 import './PerfilPage.css';
 import NavBar from '../Components/NavBar.js';
 import Carrossel from '../Components/Carrossel.js';

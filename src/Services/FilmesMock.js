@@ -77,7 +77,7 @@ export const filmes = [
   },
   {
     id: 6,
-<<<<<<< HEAD
+
 
     titulo: "Lupin",
     tipo: "s",
@@ -88,12 +88,11 @@ export const filmes = [
      temporadas: "3 temporadas",
     fotoThumbnail: 'public/Imagens/lupin.png',
 
-=======
     titulo: "../Imagens/lupin.png",
     tipo: "s",
      temporadas: "3 temporadas",
     fotoThumbnail: 'public/Imagens/LUP3.webp',
->>>>>>> 3718fb15452502a85b39687c01d24da873e86ea0
+
     ano_lancamento: 2021,
     genero: "Suspense, Crime",
     elenco: ["Omar Sy", "Ludivine Sagnier"],
@@ -218,16 +217,16 @@ export const filmesNum = [
     id: 14,
     titulo: "Lupin",
     tipo: "s",
-<<<<<<< HEAD
+
     fotoThumbnail: "../Imagens/Lupin-NI.jpg",
 
    temporadas: "3 temporadas",
     fotoThumbnail: "../Imagens/Lupin.png",
 
-=======
+
    temporadas: "3 temporadas",
     fotoThumbnail: "../Imagens/Lupin.png",
->>>>>>> 3718fb15452502a85b39687c01d24da873e86ea0
+
     ano_lancamento: 2021,
     genero: "Suspense, Crime",
     elenco: ["Omar Sy", "Clotilde Hesme"],
