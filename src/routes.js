@@ -5,6 +5,7 @@ import FilmePage from "./pages/FilmePage";
 import CatalogoPage from "./pages/CatalogoPage"; 
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import Sobre from "./pages/Sobre";
 
 function MainRoutes() {
     return (

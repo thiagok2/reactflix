@@ -1,5 +1,5 @@
 import "./NavBar.css"
-import logo from "../Imagens/stream.png"
+import logo from "../Imagens/C.png"
 import { FaRegUser } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
 import { TiHome } from "react-icons/ti";
@@ -30,12 +30,12 @@ function NavBar() {
                 </Link>                
 
                 <Link to="/home"  className="link"  >
-                    <TiHome size={30}></TiHome>
+                    <TiHome size={32}></TiHome>
                         <span>Inicio</span>
                 </Link>
 
                 <Link to="/catalogo/series" className="link">
-                    <ImFilm size={30}></ImFilm>
+                    <ImFilm size={32}></ImFilm>
                         <span >Séries</span>
                 </Link>
 
@@ -53,7 +53,7 @@ function NavBar() {
                 <FaRegBookmark size={25}></FaRegBookmark>
                     <span >Minha lista</span>
                 </Link>
-                <Link to="/catalogo/comunidade" className="link">
+                <Link to="/catalogo/minhalista" className="link">
                 <FaUserGroup size={25}></FaUserGroup>
                     <span >comunidade</span>
                 </Link>

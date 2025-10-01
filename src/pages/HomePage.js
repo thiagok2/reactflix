@@ -1,5 +1,6 @@
 import "./HomePage.css";
 
+import { Link } from 'react-router-dom'
 import NaveBar from "../Components/NavBar";
 import filmeService from "../Services/FilmesService";
 import Carrossel from "../Components/Carrossel";
@@ -18,6 +19,8 @@ function HomePage(){
     const clicados = filmeService.getClicados();
 
     return(
+        <div className="tudo">
+
         <div className="tela" style={{ backgroundImage: `url(${filmeTopo.fotoThumbnail})` }}>
             
             <div className="casa">
@@ -29,7 +32,7 @@ function HomePage(){
                     <Carrossel listadeFilmes={series} descricao="Novidades nas séries" pExpandido={true}/>
                     
                     {
-                      clicados?.length && <Carrossel listadeFilmes={clicados} descricao="Filmes do seu interesse"/>
+                        clicados?.length && <Carrossel listadeFilmes={clicados} descricao="Filmes do seu interesse"/>
                     }
                     
                     <CarroselNum listaNumerada ={filmesNum}/>
@@ -37,6 +40,23 @@ function HomePage(){
                 </div>
             </div>
         
+        </div>
+        <div className="footer">
+            <div className="cima">
+            <span>
+                Dúvidas? Entre em contato com: suportecine@gmail.com
+            </span>
+            </div>
+            <div className="texto">
+                <span className="link">
+                    Sobre
+                </span>
+                <span className="link">
+                    Conheça nossa equipe
+                </span>
+
+            </div>
+        </div>
         </div>
     );
 }
