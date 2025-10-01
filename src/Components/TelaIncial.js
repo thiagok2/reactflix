@@ -17,5 +17,5 @@ function TelaInicial() {
     </div>
   );
 }
-//teste
+//testee
 export default TelaInicial;
