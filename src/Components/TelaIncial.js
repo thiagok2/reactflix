@@ -1,15 +1,12 @@
-import "./SelecaoPerfil.css";
-import CardPerfil from "./CardPerfil";
+import "./TelaInicial.css";
 import cineversoBg from "../Imagens/ofcc.png";
 
-
-function SelecaoPerfil() {
+function TelaInicial() {
   const usuarioExemplo = {
  
   };
-
   return (
-    <div className="selecao-perfil" style={{ "--logo-url": `url(${cineversoBg})` }}>
+    <div className="tela-inicial" style={{ "--logo-url": `url(${cineversoBg})` }}>
       <h2></h2>
 
       <div className="janelas">
@@ -21,4 +18,4 @@ function SelecaoPerfil() {
   );
 }
 
-export default SelecaoPerfil;
+export default TelaInicial;

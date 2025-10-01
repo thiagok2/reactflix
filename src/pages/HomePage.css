@@ -10,7 +10,7 @@
     }
 
     .todosFilme{
-        background-color: #141414;
+        background-color: #f3f0f0;
         background: -moz-linear-gradient(top, rgba(255,0,0,0) 0%, #141414 50%);
         background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%,#141414 25%);
         height: 100%;

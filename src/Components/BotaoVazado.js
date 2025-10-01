@@ -6,8 +6,9 @@ function BotaoVazado () {
     return(
 
         <Link className="botao-vazado">
-            GERENCIAR PERFIL
-        </Link>
+    
+
+</Link>
   
     );
 
