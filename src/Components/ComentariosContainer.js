@@ -2,6 +2,8 @@ import ComentariosService from '../Services/ComentariosService';
 import './ComentariosContainer.css'
 import { FaStar } from "react-icons/fa";
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 //coment
 function ComentariosContainer({ filme }) {
 
@@ -35,20 +37,22 @@ function ComentariosContainer({ filme }) {
         {
           comentarios.map((comentario, idx) => (
             
-            <div className='comentario' key={idx}>
-              <div className="comentario-header">
-                <img src={comentario.avatar_foto} className='foto-avatar-comentario' alt="image-perfil-comentario" />
-                <strong>{comentario.autor}</strong>
+            <Link to={`/`}>
+              <div className='comentario' key={idx}>
+                <div className="comentario-header">
+                  <img src={comentario.avatar_foto} className='foto-avatar-comentario' alt="image-perfil-comentario" />
+                  <strong>{comentario.autor}</strong>
+                </div>
+
+                <p className="comentario-texto">{comentario.texto}</p>
+
+                <div className='estrelas'>
+                  <span> <FaStar className='estrela' /> {comentario.avaliacao}/10</span>
+                  <span className="comentario-data">{comentario.data_comentario}</span>
+                </div>
+
               </div>
-
-              <p className="comentario-texto">{comentario.texto}</p>
-
-              <div className='estrelas'>
-                <span> <FaStar className='estrela' /> {comentario.avaliacao}/10</span>
-                <span className="comentario-data">{comentario.data_comentario}</span>
-              </div>
-
-            </div>
+            </Link>
 
           ))
         }
