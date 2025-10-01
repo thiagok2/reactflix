@@ -1,248 +1,65 @@
 .card {
-
-
-
-    display: flex;
-
-
-
-    flex-direction: column;
-
-
-
-    width: 350px;
-
-
-
-    flex-shrink: 0;
-
-
-
-    height: 220px;
-
-
-
-
-
-
-
-    color: aliceblue;
-
-
-
-    /* border: solid 2px red; */
-
-
-
-    justify-content: space-between;
-
-
-
-    text-decoration: none;
-
-
-
-    border-radius: 8px;
-
-
-
-
-
-
-
-    background-position: center;
-
-
-
-    background-size: cover;
-
-
-
-    background-repeat: no-repeat;
-
-
-
-
-
-
-
-    padding: 25px;
-
-
-
-    box-sizing: border-box;
-
-
-
-
-
-    transition: transform 0.3s ease-out;
-
-
-
-    font-size: 20px;
-
-
-
-    background-color: black;
-
-
-
-
-
-
-
-
-
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  flex-shrink: 0;
+  height: 220px;
+  color: aliceblue;
+  /* border: solid 2px red; */
+
+  justify-content: space-between;
+  text-decoration: none;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 25px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+
+  font-size: 20px;
+  background-color: black;
 }
-
-
 
 .card:hover {
-
-
-
-
-
-    transform: scale(1.05);
-
-    /* Aumenta o card em 5% */
-
-
-
-    z-index: 5;
-
-    /* Garante que ele fique na frente dos vizinhos */
-
-
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-
-    /* Sombra para dar profundidade */
-
-
-
-
-
+  transform: scale(1.05);
+  /* Aumenta o card em 5% */
+  z-index: 5;
+  /* Garante que ele fique na frente dos vizinhos */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  /* Sombra para dar profundidade */
 }
-
-
 
 .card-heard {
-
-
-
-    display: flex;
-
-
-
-    flex-direction: row;
-
-
-
-    justify-content: end;
-
-
-
-
-
-
-
-    background-color: rgba(20, 20, 20, 0.7);
-
-
-
-    padding: 5px;
-
-
-
-    border-radius: 4px;
-
-
-
-    align-self: flex-end;
-
-
-
-
-
-
-
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: rgba(20, 20, 20, 0.7);
+  padding: 5px;
+  border-radius: 4px;
+  align-self: flex-end;
 }
-
-
 
 .nota-card-heard {
-
-
-
-    display: flex;
-
-
-
-    flex-direction: row;
-
-
-
-    justify-content: end;
-
-
-
-    color: yellow;
-
-
-
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color: yellow;
 }
-
 
 
 .titulo-card-heard {
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  gap: 5px;
 
+  border-radius: 50px;
+  background-color: rgba(117, 114, 114, 0.249);
+  display: flex;
 
-
-    font-weight: 600;
-
-
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-
-
-    font-size: 30px;
-    gap: 5px;
-
-
-
-
-
-    border-radius: 50px;
-
-
-
-    background-color: rgba(117, 114, 114, 0.249);
-
-
-
-    display: flex;
-
-
-
-    flex-direction: row;
-
-
-
-    justify-content: space-between;
-
-
-
-    align-items: end;
-
-
-
-
-
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
 }

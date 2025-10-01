@@ -3,6 +3,7 @@ import './ComentariosContainer.css'
 import { FaStar } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { usuarios } from '../Services/UsuarioMock';
 
 //coment
 function ComentariosContainer({ filme }) {
@@ -19,7 +20,7 @@ function ComentariosContainer({ filme }) {
 
   return (
     <div className='all-container'>
-
+      
       <div className='info-avaliacao'>
         <strong>Avaliação Média: </strong>
         <strong className='avaliação-texto'>
@@ -30,19 +31,21 @@ function ComentariosContainer({ filme }) {
       </div>
 
       <div className="comentario-container">
-
           <strong className='avalicao'>Avaliações</strong>
 
           <div className='lista-comentarios'>
         {
           comentarios.map((comentario, idx) => (
             
-            <Link to={`/`}>
-              <div className='comentario' key={idx}>
-                <div className="comentario-header">
-                  <img src={comentario.avatar_foto} className='foto-avatar-comentario' alt="image-perfil-comentario" />
-                  <strong>{comentario.autor}</strong>
-                </div>
+            <div className='comentario' key={idx}>
+
+                <Link to={`/usuario/${comentario.id}`} >
+                  <div className="comentario-header">
+                    <img src={comentario.avatar_foto} className='foto-avatar-comentario' alt="image-perfil-comentario" />
+                    <strong>{comentario.autor}</strong>
+                  </div>
+
+                </Link>
 
                 <p className="comentario-texto">{comentario.texto}</p>
 
@@ -52,8 +55,6 @@ function ComentariosContainer({ filme }) {
                 </div>
 
               </div>
-            </Link>
-
           ))
         }
         </div>

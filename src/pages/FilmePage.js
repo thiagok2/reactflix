@@ -32,12 +32,7 @@ function FilmePage() {
                 </div>
 
                 <div className="infos">
-                    <div className="Nome"> <Nome filme={filme}/> </div>
                     <Header filme={filme}/>
-
-                    <div className="atores-container">
-                        <Elenco filme={filme}/>
-                    </div>
                 </div>
 
             </div>
