@@ -44,3 +44,9 @@ flex-direction: row;
     color: gray;
     font-size: 20px;
 }
+
+.nota-card-heard{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}

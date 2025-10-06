@@ -30,8 +30,6 @@ function CardFilme({ filme, expandido = false }) {
                 </div>
             </div>
 
-            <div className="titulo-card-heard">{filme.titulo} <div className="nota-card-heard"><IoMdStar />{filme.nota_avaliacao} </div></div>
-
             {expandido && <span>{filme.duracao}</span>}
         
 

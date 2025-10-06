@@ -12,6 +12,7 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +35,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.16.3",
+    "prisma": "^6.16.3"
+  },
+  "description": "```sh\r  npm install\r  ```",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagok2/reactflix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagok2/reactflix/issues"
+  },
+  "homepage": "https://github.com/thiagok2/reactflix#readme"
 }
