@@ -8,7 +8,6 @@ class PlaylistService {
   
   static getPlaylistByAccount(accountId, tipo = "default") {
     const account = accountsMock.find(acc => acc.id === accountId);
-
     if (!account) return [];
 
     const filmesDaConta = account.playlist

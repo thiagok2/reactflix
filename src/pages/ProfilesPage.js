@@ -1,6 +1,4 @@
 import "./ProfilesPage.css";
-
-
 import SelecaoPerfil from "../Components/SelecaoPerfil";
 import { usuarios }  from "../Services/UsuarioMock";
 

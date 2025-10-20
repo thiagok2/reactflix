@@ -1,4 +1,4 @@
-import './UsuarioPage'
+import './UsuarioPage.css'
 import React, { useEffect, useState } from 'react';
 import PlaylistService from '../Services/PlaylistService.js';
 import { accountsMock } from '../Services/AccountMock.js';
@@ -29,20 +29,26 @@ export default function UsuarioPage({ comentarios }) {
   return (
  
     <div className="perfil-page">
-      <NavBar/>
 
-      <div className='header-usuario'>
-        <h2>Perfil do Usuário</h2>
-        <p><strong>ID:</strong> {usuario.id}</p>
-        <p><strong>Nome:</strong> {usuario.nomeCompleto}</p>
-        <p><strong>Apelido:</strong> {usuario.apelidoName}</p>
-        <img src={usuario.avatarImage} alt="avatar" width={150} />
+      <NavBar/>
+      <div className='container-do-algo'>
+        <div className='header-usuario'>
+          <img src={usuario.avatarImage} alt="avatar" width={150} />
+          <div className='header-text'>
+            <p className='nomeCompleto'>{usuario.nomeCompleto}</p>
+            <p className='apelidoName'>{usuario.apelidoName}
+            <p>{usuario.email}</p>
+            </p>
+            
+          </div>
+        </div>
+        
+        </div>
+        {playlist && 
+          <Carrossel listadeFilmes={playlist} descricao={`Filmes da playlist ${usuario?.apelidoName}`} expandido={true}/>
+        }
+        
       </div>
-      {playlist && 
-        <Carrossel listadeFilmes={playlist} descricao={`Filmes da playlist ${usuario?.apelidoName}`} expandido={true}/>
-      }
-      
-    </div>
 
   );
 

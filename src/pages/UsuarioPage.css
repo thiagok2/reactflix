@@ -1,0 +1,53 @@
+.perfil-page {
+    padding: 20px;
+    height: 100vh;
+  }
+  
+.container-do-algo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+  .header-usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+    padding: 80px 50px ;
+    background: rgba(240, 248, 255, 0.08);
+    border-radius: 20px;
+    gap: 10px;
+    text-align: center;
+  
+  }
+  
+  .header-text{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    padding-left: 5px;
+    font-size: 20px;
+    gap: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+
+  .nomeCompleto{
+    text-align: center;
+    font-size: 40px;
+
+  }
+
+  .apelidoName{
+    color: rgb(99, 99, 99);
+    font-size: 20px;
+  }
+  
