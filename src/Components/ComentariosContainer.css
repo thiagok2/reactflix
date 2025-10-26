@@ -1,8 +1,9 @@
 .comentario-container{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .comentario {
@@ -73,4 +74,58 @@
 
 .estrela{
     color: rgba(255, 255, 0, 0.896);
+}
+
+.avaliacao-num{
+  margin-left:6px;
+  font-weight:600;
+}
+
+.comentarios-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.comentario-form {
+  min-width: 320px;
+  max-width: 420px;
+  background: rgba(255,255,255,0.04);
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comentario-form h4 {
+  margin: 0 0 6px 0;
+}
+
+.comentario-form input,
+.comentario-form textarea,
+.comentario-form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.3);
+  color: white;
+}
+
+.comentario-form textarea { min-height: 80px; resize: vertical; }
+
+.comentario-form button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #e50914;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .comentario-container { flex-direction: column; }
+  .comentarios-list { justify-content: center; }
 }

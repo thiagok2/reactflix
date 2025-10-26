@@ -15,7 +15,6 @@ function MainRoutes() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/filme" element={<FilmePage />} />
             <Route path="/filme/:id" element={<FilmePage />} /> 
-            <Route path="/filme/:id" element={<PerfilPage />} /> 
 
             
             <Route path="/catalogo" element={<CatalogoPage />} />
