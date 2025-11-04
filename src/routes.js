@@ -5,7 +5,9 @@ import FilmePage from "./pages/FilmePage";
 import CatalogoPage from "./pages/CatalogoPage"; 
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
-import Sobre from "./pages/Sobre";
+import Colaboradores from "./pages/Colaboradores"
+import Sobre from "./pages/Sobre"
+import Comunidade from "./pages/Comunidade";
 
 function MainRoutes() {
     return (
@@ -23,6 +25,11 @@ function MainRoutes() {
             <Route path="/catalogo/:tipo" element={<CatalogoPage />} />
             
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/colaboradores" element={<Colaboradores />} />
+            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/comunidade" element={<Comunidade/>} />
+
+
         </Routes>
     );
 }
