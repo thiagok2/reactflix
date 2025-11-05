@@ -7,6 +7,7 @@ import { FaComments } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa6";
 
 
+
 function CatalogoPage() {
 
     const { tipo } = useParams();

@@ -39,10 +39,6 @@ function NavBar() {
                     <span>Filmes</span>
                 </Link>
 
-                <Link to="/pages/comunidade" className="link">
-                    <FaUserGroup size={25} />
-                    <span>Comunidade</span>
-                </Link>
             </div>
 
             <div className="nav-bar-conta">

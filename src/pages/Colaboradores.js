@@ -1,4 +1,7 @@
 import "./Colaboradores.css";
+import { FaAngleDoubleLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 import Ad from "../Imagens/adonai.jpg";
 import Dri from "../Imagens/adriely.png";
 import Aly from "../Imagens/alycia.jpg";
@@ -27,6 +30,7 @@ import Gus from "../Imagens/gustavo.png";
 import Wal from "../Imagens/wal.png";
 
 function Colaboradores() {
+  const navigate = useNavigate();
 
   const colaboradores = [
     { nome: "Adonai Roberto", cargo: "Colaborador", foto: Ad },
@@ -59,6 +63,10 @@ function Colaboradores() {
 
   return (
     <div className="colab-pai">
+      <button className="colab-voltar" onClick={() => navigate(-1)}>
+        <FaAngleDoubleLeft className="icon-voltar" /> Voltar
+      </button>
+
       <h1 className="colab-titulo">Nossos Colaboradores</h1>
       <div className="colab-grid">
         {colaboradores.map((pessoa, index) => (

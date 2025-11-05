@@ -28,6 +28,7 @@ function MainRoutes() {
             <Route path="/colaboradores" element={<Colaboradores />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/comunidade" element={<Comunidade/>} />
+            
 
 
         </Routes>
