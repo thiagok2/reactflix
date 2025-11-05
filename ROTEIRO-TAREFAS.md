@@ -82,4 +82,4 @@ Retornar lista de usuários
 3. Mover pasta Imagens de src para public
 
 
-4.Atualizar HomePage
+4.Atualizar Page

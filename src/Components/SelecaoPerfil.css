@@ -1,31 +1,55 @@
-.selecao-perfil{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    gap: 60px;
-    
+/* Fundo do body */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
 }
 
-h2{
-    font-size: 40px;
-    margin-bottom: -30px;
-
+/* Container principal */
+.selecao-perfil {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
 }
 
-
-.janelas{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-
+/* A imagem de fundo da página */
+.selecao-perfil::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Imagens/ofcc.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 1;
 }
 
-.janelas:last-child{
-    border: 3px white solid;
-    width: 60px;
-    height: 60px;
+/* Conteúdo acima da imagem */
+.selecao-perfil > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Botão (imagem do clicar) */
+.janelas {
+  z-index: 2;
+  position: absolute;
+  top: 70%; /* desce o botão */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.janelas:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
