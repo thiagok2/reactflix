@@ -33,7 +33,7 @@ function PerfilPage() {
               
             />
             <p> {filme.descricao}</p>
-            <p>{filme.titulo}</p>
+            <p>{filme.nota}</p>
           </div>
 
         ))}
