@@ -11,6 +11,7 @@ import filmeService from "../Services/FilmesService";
 import { useParams } from "react-router-dom";
 import NotFound from "./NotFound";
 import NaveBar from "../Components/NavBar";
+import { useEffect, useState } from "react";
 
 
 function FilmePage() {
@@ -18,7 +19,17 @@ function FilmePage() {
     const { id } = useParams(); // pega o parâmetro da URL
     const filmeId = parseInt(id);
 
-    const filme = filmeId ? filmeService.getById(filmeId) : filmeService.getRandomFilme();
+    const [filme, setFilme] = useState(null);
+
+    useEffect(() => {   
+        const loadingFilme = async () => {
+            const result = await  filmeService.getById(filmeId);
+            console.log(result);
+            setFilme(result);
+        }
+        console.log(filmeId);
+        loadingFilme();
+    }, [filmeId]);
 
     if (!filme) return <NotFound/>
     return (

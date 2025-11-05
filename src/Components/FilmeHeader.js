@@ -9,15 +9,10 @@ function FilmeHeader({ filme }) {
             <div className='infoFilme'>
 
                 <div className='NomeFilme'>{filme.titulo}</div>
-
-                <div className='Tempo'>{filme.duracao}</div>
-
-                <div className='caracteristicas'>
-                 <div className='lancamento'>{filme.ano_lancamento}</div>
-                <div className='temporadas'>{filme.temporadas}</div>
-                    <span className='hd-texto'>HD</span>
-                    </div>
-
+                    <div className='descricao'>{filme.descricao}</div>;
+                    <div className='ano'>{filme.ano}</div>;
+                    <div className='nota'>{filme.nota}</div>;
+                    
 
                 <div className='classificacao'>
                     <span className={ "faixa-etaria-icon " + (filme.faixa_etaria >= "16" ? "icon-red":"icon-green")}>
@@ -28,25 +23,7 @@ function FilmeHeader({ filme }) {
                 </div>
 
              
-               
-                
-
-                <div className='descricao'>
-                    <div className='texto'>
-                        {filme.sinopse}
-                    </div>
-
-                    <div className="atores-container">{filme.elenco}</div>
-                 
-                     <div className='Botoes-detalhes'>
-        
-                          <span className='estilo-botao'><FaPlay color ="000000" className='Icone'/> Assistir</span>
-
-                           <span className='estilo-lista'> <IoAddCircleOutline color ="000000" className='Lista'/>Minha Lista </span>
-                     </div>
-
-                
-
+                <div className='botoes-header'>
                     <div className='card-menu'>
                         <Link className='cor-visao'>
                             COMENTÁRIOS

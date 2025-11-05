@@ -1,45 +1,45 @@
-import React, { useEffect, useState } from 'react';
-import PlaylistService from '../Services/PlaylistService.js';
-import { accountsMock } from '../Services/AccountMock.js';
-import { Link } from 'react-router-dom';
-import logo from '../Imagens/netflix.png';
-import './PerfilPage.css';
-import NavBar from '../Components/NavBar.js';
-import Carrossel from '../Components/Carrossel.js';
+import { useEffect, useState } from "react";
+import "./PerfilPage.css";
 
-export default function PerfilPage() {
-  const [usuario, setUsuario] = useState(null);
+import { gerarPlaylistAleatoria } from "../Services/UsuariosService";
+import NavBar from "../Components/NavBar";
+function PerfilPage() {
   const [playlist, setPlaylist] = useState([]);
-  const [series, setSeries] = useState([]);
-  const [filmes, setFilmes] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
-    if (usuarioLogado) {
-      setUsuario(usuarioLogado);
-      const account = accountsMock.find(acc => acc.usuarioId === usuarioLogado.id);
-      if (account) {
-        setPlaylist(PlaylistService.getPlaylistByAccount(account.id));
-        setSeries(PlaylistService.getPlaylistByAccount(account.id, "series"));
-        setFilmes(PlaylistService.getPlaylistByAccount(account.id, "filmes"));
-      }
+    async function carregarPlaylist() {
+      const data = await gerarPlaylistAleatoria(1, 8); // ID do usuário e qtd de filmes
+      setPlaylist(data.filmes);
     }
-    setLoading(false);
+    carregarPlaylist();
   }, []);
 
-  if (!usuario) return <p>Carregando usuário...</p>;
-
   return (
-    <div className="perfil-page">
-      <NavBar/>
-    
-      
-      <div className='card-carrosel'>
-        <Carrossel listadeFilmes={playlist} descricao="Minha playlist" expandido={true}/>
-        <Carrossel listadeFilmes={series} descricao="Minhas séries favoritas" expandido={true}/>
-        <Carrossel listadeFilmes={filmes} descricao="Meus filmes"  expandido={true}/>
+    <div>
+      <div className="NavBar">
+    <NavBar/>
+        
+        </div>
+
+      <h1> Minha Playlist Aleatória</h1>
+
+      <div className="filmes">
+
+        {playlist.map((filme) => (
+          <div  className="" key={filme.id} style={{ width: "150px" }}>
+            <img className="img"
+              src={filme.fotoThumbnail}
+              alt={filme.titulo}
+              
+            />
+            <p> {filme.descricao}</p>
+            <p>{filme.titulo}</p>
+          </div>
+
+        ))}
       </div>
     </div>
   );
 }
+
+export default PerfilPage;
