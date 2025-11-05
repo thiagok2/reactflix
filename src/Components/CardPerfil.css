@@ -1,9 +1,19 @@
-.Perfil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+}
+.Perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    cursor: pointer;
+    transition:  transform ease 200ms;
+    text-decoration: none;
 }
 
 .containerFoto {
@@ -34,4 +44,15 @@
   font-size: 18px;
   text-align: center;
 
+}
+
+.card-footer{
+display: flex;
+flex-direction: row;
+
+}
+
+.genero{
+    color: gray;
+    font-size: 20px;
 }

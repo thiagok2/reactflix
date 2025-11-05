@@ -57,3 +57,9 @@
 .carrosel:active{
     cursor: grabbing;
 }
+
+.titulo-carrossel {
+  font-size: 40px;   
+  font-weight: bold;
+  margin: 20px 0 15px;
+}
