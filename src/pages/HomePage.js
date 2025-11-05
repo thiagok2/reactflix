@@ -1,45 +1,79 @@
 import "./HomePage.css";
+import { useEffect, useState } from "react";
 
-import NaveBar from "../Components/NavBar";
-import filmeService from "../Services/FilmesService";
+import NavBar from "../Components/NavBar";
 import Carrossel from "../Components/Carrossel";
 import CarroselNum from "../Components/CarroselNum";
-
 import FilmeDestaque from "../Components/FilmeDestaque";
 
-import {filmesNum} from '../Services/FilmesMock';
+import FilmesServiceApi from "../Services/MoviesServices";
+import { filmesNum } from "../Services/FilmesMock"; 
 
-function HomePage(){
-    
-    const filmeTopo = filmeService.getRandomFilme();
+function HomePage() {
+  const [filmes, setFilmes] = useState([]);
+  const [series, setSeries] = useState([]);
+  const [filmeTopo, setFilmeTopo] = useState(null);
+  const [clicados, setClicados] = useState([]);
 
-    const series = filmeService.getSeries();
-    const filmes = filmeService.getFilmes();
+  useEffect(() => {
+    const carregarDados = async () => {
+      try {
+        // Pré-carrega os gêneros (opcional)
+        await FilmesServiceApi.preloadGenres();
 
-    const clicados = filmeService.getClicados();
+        const [filmesPopulares, seriesPopulares] = await Promise.all([
+          FilmesServiceApi.getPopularMovies(),
+          FilmesServiceApi.getPopularSeries(),
+        ]);
 
-    return(
-        <div className="tela" style={{ backgroundImage: `url(${filmeTopo.fotoThumbnail})` }}>
-            
-            <div>
-                <NaveBar />
-                <FilmeDestaque filme={filmeTopo}/>
+        setFilmes(filmesPopulares);
+        setSeries(seriesPopulares);
 
-                <div className="todosFilme">
-                    <Carrossel listadeFilmes={filmes} descricao="Filmes novos"/>
-                    <Carrossel listadeFilmes={series} descricao="Novidades nas séries" pExpandido={true}/>
-                    
-                    {
-                      clicados?.length && <Carrossel listadeFilmes={clicados} descricao="Filmes do seu interesse"/>
-                    }
-                    
-                    <CarroselNum listaNumerada ={filmesNum}/>
+        // Escolhe um filme aleatório para destaque
+        const aleatorio = filmesPopulares[Math.floor(Math.random() * filmesPopulares.length)];
+        setFilmeTopo(aleatorio);
 
-                </div>
-            </div>
-        
+        // Recupera filmes clicados do localStorage (se você quiser manter essa feature)
+        const armazenados = JSON.parse(localStorage.getItem("filmesClicados") || "[]");
+        setClicados(armazenados);
+      } catch (error) {
+        console.error("Erro ao carregar dados da HomePage:", error);
+      }
+    };
+
+    carregarDados();
+  }, []);
+
+  return (
+    <div
+      className="tela"
+      style={{
+        backgroundImage: filmeTopo ? `url(${filmeTopo.fotoThumbnail})` : "none",
+      }}
+    >
+      <div>
+        <NavBar />
+
+        {filmeTopo && <FilmeDestaque filme={filmeTopo} />}
+
+        <div className="todosFilme">
+          {filmes.length > 0 && (
+            <Carrossel listadeFilmes={filmes} descricao="Filmes populares" />
+          )}
+
+          {series.length > 0 && (
+            <Carrossel listadeFilmes={series} descricao="Séries populares" pExpandido={true} />
+          )}
+
+          {clicados.length > 0 && (
+            <Carrossel listadeFilmes={clicados} descricao="Filmes do seu interesse" />
+          )}
+
+          <CarroselNum listaNumerada={filmesNum} />
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default HomePage;

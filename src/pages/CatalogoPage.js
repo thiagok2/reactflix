@@ -1,73 +1,87 @@
-import './CatalogoPage.css'
-
+import './CatalogoPage.css';
+import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import NavBar from '../Components/NavBar';
-import { Link, useParams } from 'react-router-dom'
-import filmesService from '../Services/FilmesService';
-import { FaComments } from "react-icons/fa6";
-import { FaStar } from "react-icons/fa6";
-
+import FilmesServiceApi from '../Services/MoviesServices';
+import { FaComments, FaStar } from "react-icons/fa6";
 
 function CatalogoPage() {
+  const { tipo } = useParams();
+  const [filmes, setFilmes] = useState([]);
+  const isSeries = tipo === "series";
 
-    const { tipo } = useParams();
-    let paramTipo = tipo === "series" ? "s" : "f";
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = isSeries
+        ? await FilmesServiceApi.getPopularSeries()
+        : await FilmesServiceApi.getPopularMovies();
 
-    const filmeList = filmesService.getFilmesPorTipo(paramTipo);
 
-    const handleAddClicados = (filme) => {
-        filmesService.addFilmeClicado(filme);
+      const dataWithCast = await Promise.all(
+        data.map(async (item) => {
+          const elenco = isSeries
+            ? await FilmesServiceApi.getSeriesCredits(item.id)
+            : await FilmesServiceApi.getMovieCredits(item.id);
+          return { ...item, elenco };
+        })
+      );
 
-    }
+      setFilmes(dataWithCast);
+    };
 
-    return (
-        <div className='container'>
-            <div className='navbar'>
-                <NavBar />
+    fetchData();
+  }, [isSeries]);
+
+  const handleAddClicados = (filme) => {
+    console.log("Clicou em:", filme.titulo);
+
+  };
+
+  return (
+    <div className='container'>
+      <div className='navbar'>
+        <NavBar />
+      </div>
+
+      <div className='containers-catalogo'>
+        {filmes.map((filme, idx) => (
+          <div
+            key={idx}
+            className='container-filme'
+            onClick={() => handleAddClicados(filme)}
+          >
+            <div className='header-filme'>
+              <span className='filme-titulo'>{filme.titulo}</span>
+              <span className="filme-comentarios">
+                <FaComments /> {filme.curtidas}
+              </span>
             </div>
 
-            <div className='containers-catalogo'>
-                {
-                    filmeList.map((filme, idx) => 
-                        <Link key={idx} className='container-filme' onClick={() => handleAddClicados(filme)}>
-                            <div className='header-filme'>
-                                <span className='filme-titulo'>{filme.titulo}</span>
-                                <span className="filme-comentarios"> <FaComments /> {filme.numero_comentarios}</span>
-                            </div>
-
-                            <div className='img-container'>
-                                <Link className='card-filmes' to={`/filme/${filme.id}`} >
-                                    <img src={filme.fotoThumbnail} className='foto' alt={filme.titulo} />
-                                </Link>
-                            </div>
-
-                            <div className='filme-subtitulo'>
-                                <div className='subitem-header'>{filme.nota_avaliacao} <FaStar className='star'/></div>
-
-
-                                <div className='subitem-header faixa'>{filme.faixa_etaria}</div>
-                            </div>
-                            {filme.temporadas &&
-                                <div className='item-opcional'>{filme.temporadas}</div>
-                            }
-                            <div className='introducao'>
-                                {filme.sinopse}
-                            </div>
-                            <div className='footer-filme'>
-                                <div className='footer-item'> {filme.elenco}</div>
-                                <div className='footer-item'> {filme.genero}</div>
-                                <div className='footer-item'>Lançamento: {filme.ano_lancamento}</div>
-                                {filme.indicacoes_premios?.length > 0 &&
-                                <div className='footer-item'>Indicações: {filme.indicacoes_premios}</div>
-                                }
-                            </div>
-                        </Link>
-                    )
-                }
-
+            <div className='img-container'>
+              <Link className='card-filmes' to={`/filme/${filme.id}`} >
+                <img src={filme.fotoThumbnail} className='foto' alt={filme.titulo} />
+              </Link>
             </div>
 
-        </div>
-    )
+            <div className='filme-subtitulo'>
+              <div className='subitem-header'>
+                {filme.nota_avaliacao} <FaStar className='star' />
+              </div>
+              <div className='subitem-header faixa'>{filme.genero}</div>
+            </div>
+
+            <div className='introducao'>{filme.sinopse}</div>
+
+            <div className='footer-filme'>
+              <div className='footer-item'>Elenco: {filme.elenco}</div>
+              <div className='footer-item'>Gênero: {filme.genero}</div>
+              <div className='footer-item'>Lançamento: {filme.ano_lancamento}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default CatalogoPage;

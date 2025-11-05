@@ -1,64 +1,70 @@
-import ComentariosService from '../Services/ComentariosService';
 import './ComentariosContainer.css'
 import { FaStar } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { usuarios } from '../Services/UsuarioMock';
 
-//coment
+import FilmesServiceApi from '../Services/MoviesServices';
+
 function ComentariosContainer({ filme }) {
 
-  const comentarios = ComentariosService.getByFilmeId(filme.id);
-  const [tamanho, setTamanho] = useState(0)
-
+  const [comentarios, setComentarios] = useState([]);
+  const [tamanho, setTamanho] = useState(0);
 
   useEffect(() => {
-    setTamanho(comentarios.length);
-  }, [comentarios]);
+    const carregarComentarios = async () => {
+      
+      const tipoConteudo = filme.tipo || 'movie';
 
-  if(tamanho == 0) return null;
+      const data = await FilmesServiceApi.getCommentsByMovieId(filme.id, tipoConteudo);
+      setComentarios(data);
+      setTamanho(data.length);
+    };
+
+    carregarComentarios();
+  }, [filme]);
+
+  if (tamanho === 0) return null;
 
   return (
     <div className='all-container'>
-      
+
       <div className='info-avaliacao'>
         <strong>Avaliação Média: </strong>
         <strong className='avaliação-texto'>
-          <span> <FaStar className='estrela' /> {filme.nota_avaliacao}/10</span>
+          <span>
+            {filme.nota_avaliacao?.toFixed(1)} <FaStar className='estrela' /> / 10
+          </span>
         </strong>
-
 
       </div>
 
       <div className="comentario-container">
-          <strong className='avalicao'>Avaliações</strong>
+        <strong className='avalicao'>Avaliações</strong>
 
-          <div className='lista-comentarios'>
-        {
-          comentarios.map((comentario, idx) => (
-            
-            <div className='comentario' key={idx}>
+        <div className='lista-comentarios'>
+          {
+            comentarios.map((comentario, idx) => (
+              <div className='comentario' key={idx}>
 
                 <Link to={`/usuario/${comentario.id}`} >
                   <div className="comentario-header">
-                    <img src={comentario.avatar_foto} className='foto-avatar-comentario' alt="image-perfil-comentario" />
+                    <img src={comentario.avatar_foto || '/default-avatar.png'} className='foto-avatar-comentario' alt="foto-perfil" />
                     <strong>{comentario.autor}</strong>
                   </div>
-
                 </Link>
 
                 <p className="comentario-texto">{comentario.texto}</p>
 
                 <div className='estrelas'>
-                  <span> <FaStar className='estrela' /> {comentario.avaliacao}/10</span>
                   <span className="comentario-data">{comentario.data_comentario}</span>
                 </div>
 
               </div>
-          ))
-        }
+            ))
+          }
         </div>
       </div>
+
     </div>
   );
 }
