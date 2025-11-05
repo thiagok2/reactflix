@@ -14,57 +14,42 @@ body, html {
   z-index: 1;
 }
 
-/* A imagem como fundo visual central */
-
-
+/* A imagem de fundo da página */
 .selecao-perfil::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%);
-  background-image: var(--logo-url);
-  background-size: cover; /* OU 'contain' se quiser ver tudo */
-  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Imagens/ofcc.png');
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: 0;
-  opacity: 1; /* ou reduza se quiser ela mais suave */
+  opacity: 1;
 }
 
-
-/* Conteúdo acima da logo */
+/* Conteúdo acima da imagem */
 .selecao-perfil > * {
   position: relative;
   z-index: 1;
 }
 
-/* Exemplo de seção abaixo (opcional) */
+/* Botão (imagem do clicar) */
 .janelas {
-  
-  width: 10px; /* ou o tamanho que você já usa */
-  height: 20px;
   z-index: 2;
   position: absolute;
-  top: 52%;  /* ajuste fino vertical */
-  left: 50%; /* centraliza horizontalmente */
+  top: 70%; /* desce o botão */
+  left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-
-}
-
-.perfil-quadrado {
-  width: 160px;
-  height: 160px;
-  background-image: url('../Imagens/clicar.png'); /* Caminho da imagem */
+  transition: transform 0.2s ease;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+  background-repeat: no-repeat;
 }
 
-.perfil-quadrado:hover {
-  transform: scale(1.05);
+.janelas:hover {
+  transform: translate(-50%, -50%) scale(1.05);
 }
