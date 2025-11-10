@@ -12,7 +12,7 @@ export const usuarios = [
     nomeCompleto: "Bruno Oliveira Costa",
     email: "bruno.costa@example.com",
     idade: 32,
-    apelidoName: "Bruninho",
+    apelidoName: "emilly",
     avatarImage: "https://i.pinimg.com/564x/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"
   },
   {

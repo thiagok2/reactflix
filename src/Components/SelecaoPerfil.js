@@ -1,33 +1,29 @@
 import "./SelecaoPerfil.css";
-import BotaoVazado from "./BotaoVazado";
 import CardPerfil from "./CardPerfil";
+import cineversoBg from "../Imagens/ofcc.png";
+import clicar from "../Imagens/clicar.png"
+
+function SelecaoPerfil() {
+  const usuarioExemplo = {
+
+  };
+
+  return (
+     <div 
+      className="selecao-perfil" 
+      style={{ backgroundImage: `url(${cineversoBg})`  }} // Aplica a imagem de fundo diretamente
+    >
+      <h2></h2>
+      
+      <div className="janelas">
+        <CardPerfil key={usuarioExemplo.id} usuario={usuarioExemplo} foto={clicar} />
+      </div>
 
 
-function SelecaoPerfil ({listaDeUsuarios}) {
+    </div>
 
-    return(
-        
-        
-        <div className="selecao-perfil">
-            <h2>
-                Quem está assistindo? 
-            </h2>
-
-            <div className="janelas">
-
-            {
-                listaDeUsuarios.map(user => 
-                    <CardPerfil key={user.id} usuario={user} />
-                )
-            }
-
-            </div>
-
-            <BotaoVazado />
-
-        </div>
-
-    );
+    
+  );
 }
 
 export default SelecaoPerfil;
